@@ -1,0 +1,17 @@
+.footer {
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-copyright {
+
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        gap: calc-rem(20px);
+    }
+}

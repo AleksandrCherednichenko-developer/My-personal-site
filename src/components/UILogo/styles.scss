@@ -1,0 +1,50 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: calc-rem(20px);
+
+    @include hover() {
+        .logo-dividers{
+            animation: spin-divider 1.5s;
+            transform: rotate(30deg);
+        }
+    }
+
+    &-link {
+        @include clear-link;
+        @include transit('text-shadow, color');
+        text-transform: uppercase;
+        font-weight: $fBold;
+
+        @include hover() {
+            color: $cPersianIndigo;
+            text-shadow: 5px 2px 5px #A36EFB, 0 10px 35px #A36EFB, 5px 5px 10px #A36EFB;
+        }
+    }
+
+    &-dividers {
+        @include transit('transform');
+        position: relative;
+        min-width: 2px;
+        min-height: 20px;
+        background-color: $cPersianIndigo;
+        transform: rotate(330deg);
+    }
+
+    &-text {
+        cursor: default;
+    }
+}
+
+
+@keyframes spin-divider {
+    0% {
+        transform: rotate(330deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}

@@ -1,9 +1,7 @@
 <template>
     <header class="header">
         <div class="header__inner content-container">
-            <h5 class="header_h5">
-                {{ $t('name') }}
-            </h5>
+            <UILogo />
             <UINavbar />
         </div>
     </header>
@@ -17,6 +15,7 @@ export default {
 
 <script setup>
 import UINavbar from '@/components/UINavbar/index.vue';
+import UILogo from '@/components/UILogo/index.vue';
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />
