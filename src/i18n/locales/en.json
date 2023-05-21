@@ -1,0 +1,107 @@
+{
+    "locales": {
+        "ru": "Russian",
+        "en": "English"
+    },
+    "morning": "Good morning!",
+    "afternoon": "Good afternoon!",
+    "evening": "Good evening!",
+    "night": "Good night!",
+    "navbar": {
+        "about": "About Me",
+        "resume": "Resume",
+        "project": "Project",
+        "contact": "Contact"
+    },
+    "name": "Aleksandr Cherednichenko",
+    "profession": "Frontend developer",
+    "call": "Call",
+    "write": "Write",
+    "follow": "Follow",
+    "hello": "Hello",
+    "previewText": "Hi, my name is Aleksandr, and I am a frontend developer with three years of experience in creating high-quality and high-performance web applications for various clients and industries. I use modern web technologies, such as HTML, SCSS, JavaScript and Vue 3 (Nuxt 3), Vitest as well as have basic skills in working with graphic applications, such as Figma, Photoshop. I constantly develop my professional skills and follow the best practices of web development, such as responsive design, performance optimization, accessibility and security. I am looking for interesting and challenging projects, where I can show my creative and technical abilities, as well as work in a team with other specialists. If you have any questions, I will be happy to answer them",
+    "usefulTitle": "I can be a valuable asset for potential employers because:",
+    "useful": {
+        "1": "A proven track record of delivering high-quality web applications with Vue 3",
+        "2": "Excellent communication and collaboration skills",
+        "3": "A keen interest in learning new technologies and best practices",
+        "4": "I have a flexible and adaptive mindset"
+    },
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "work1": {
+        "name": "Reelmotion Games",
+        "description": "Joining the project as a developer, I developed a scalable administrative module from scratch for managing the company's platforms. This tool significantly simplified the management and configuration of platforms, allowing the team to adapt to changes more quickly and improving overall work efficiency. After successfully completing this project, I was transferred to the development of core platforms for implementing game processes and mechanics, where I worked on creating intuitive interfaces and complex game logics, significantly improving user experience and increasing user engagement.<br><br>After launching the company's main project for internal use, I was appointed as the lead developer. From this point on, I actively led the development process: decomposing and distributing tasks, conducting code reviews, and personally merging changes into the main branch. My role included not only technical leadership but also strategic planning, which allowed us to meet our goals on time. I was involved in recruiting new developers to the team and organizing effective interaction between teams, creating a cohesive and productive work environment.<br><br>Under my leadership, modules for managing financial operations and providing game content to clients were developed. These modules ensured a high degree of automation and security of financial transactions, increasing clients' trust in our platform. During the work process, I developed the project architecture, created a user dashboard, implemented project documentation, optimized platform performance, and introduced automated tests. I also organized regular team meetings and conducted training for new employees, facilitating their quick adaptation and skill improvement.",
+        "location": "Saint Petersburg - Thailand",
+        "position": "Frontend-developer",
+        "period": "07.2022 - Present",
+        "skills": "html,sass,git,js,vue,nuxt"
+    },
+    "work2": {
+        "name": "AT-Work",
+        "description": "I participated in the development of a multifunctional platform, which included employee and job matching, buying and selling goods, integration with external services, and video conferencing implementation. I assisted in creating algorithms for candidate search, developing e-commerce modules, implementing APIs, and developing functionality for video conferencing.<br><br>Main responsibilities included requirements analysis, code development and testing, technical support and system optimization, as well as task management. Additionally, I maintained technical documentation and collaborated with the team.",
+        "location": "Saint Petersburg",
+        "position": "Frontend-developer",
+        "period": "07.2021 - 07.2022",
+        "skills": "html,sass,git,js"
+    },
+    "work3": {
+        "name": "Fl.ru",
+        "description": "Fulfilled orders from freelance platforms by developing static web pages, ensuring high-quality design and functionality. Collaborated with clients to understand their requirements, delivered projects on time, and provided post-delivery support to ensure client satisfaction. This experience honed my skills in HTML, CSS, and JavaScript, and improved my ability to manage multiple projects simultaneously.",
+        "location": "Saint Petersburg",
+        "position": "HTML-developer",
+        "period": "01.2021 - 07.2022",
+        "skills": "html,sass,js"
+    },
+    "education1": {
+        "name": "NOSOV MAGNITOGORSK STATE TECHNICAL UNIVERSITY",
+        "description": "",
+        "location": "Magnitogorsk",
+        "position": "Industrial and civil construction",
+        "period": "09.2014 - 06.2020"
+    },
+    "education2": {
+        "name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
+        "description": "",
+        "location": "Magnitogorsk",
+        "position": "Computer software and automated systems",
+        "period": "09.2009 - 06.2013"
+    },
+    "project1": {
+        "name": "Post blog Nuxt 3",
+        "description": "Personal blog app with posts. Implemented creation, deletion, editing posts. Project written using: Nuxt 3, Vite, Pinia",
+        "link": "https://github.com/AleksandrCherednichenko-developer/post-blog-nuxg3",
+        "image": "posts-blog-nuxt"
+    },
+    "project2": {
+        "name": "Alerts app",
+        "description": "Test task, it was required to implement navigation, work with api.",
+        "link": "https://aleksandrcherednichenko-developer.github.io/alerts-app/#/",
+        "image": "alert-app"
+    },
+    "project3": {
+        "name": "Template for a personal portfolio site",
+        "description": "Site - portfolio. The project is written in Vue 3 Composition api, in conjunction with the Vite faucet. Used: EsLint, i18n. The design is taken from the sample layouts that are in the public domain.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/My-personal-site",
+        "image": "site-portfolio"
+    },
+    "project4": {
+        "name": "Integration OpenAI API",
+        "description": "Integration of the public OpenAI API in a Vue project. This project was conceived for a more accessible understanding and use of AI. Some components and functions, as well as texts used in the project, were generated by AI. The project is currently on hold.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/MyProject-OpenAI",
+        "image": "openai-api"
+    },
+    "project5": {
+        "name": "Create a letter of recommendation",
+        "description": "In this project, the functionality of creating a recommendation letter is implemented. The project was written in vanilla JS. During the data entry process, the already filled data is saved.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/letter_of_recomendation",
+        "image": "letter-recommendation"
+    },
+    "project6": {
+        "name": "Create a new resume",
+        "description": "A project to create a new resume for a portal similar to HH. Written using the Sass preprocessor, the main functionality is written in vanilla JS.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/New_resume",
+        "image": "new-resume"
+    }
+}

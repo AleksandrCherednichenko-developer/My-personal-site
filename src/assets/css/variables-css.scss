@@ -1,0 +1,32 @@
+:root {
+    --rem: #{$baseRem};
+
+    --pContent:#{$pContent};
+
+    --hHeader: #{$hHeader};
+
+    --dTransit: 0.3s;
+
+    // Breakpoints
+    --bXl: #{$bXl};
+    --bLg: #{$bLg};
+    --bMd: #{$bMd};
+    --bSm: #{$bSm};
+    --bXs: #{$bXs};
+
+    --bHXl: #{$bHXl};
+    --bHLg: #{$bHLg};
+    --bHMd: #{$bHMd};
+    --bHSm: #{$bHSm};
+    --bHXs: #{$bHXs};
+
+    @media #{$mLg}, #{$mHLg} {
+        --rem: 14px;
+        --hHeader: 50px;
+    }
+
+    @media #{$mSm}, #{$mHSm} {
+        --rem: 12px;
+        --pContent: 20px;
+    }
+}

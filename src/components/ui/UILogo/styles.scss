@@ -1,0 +1,46 @@
+.logo {
+    @include display-flex($gap: 20px, $align: center);
+
+    @include hover() {
+        .text-dividers{
+            @include transit('transform, box-shadow, background-color', 2s, 5s);
+            animation: spin-divider 3s;
+            transform: rotate(30deg);
+            background-color: $cTurquoiseBlue;
+            box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+        }
+    }
+
+    &-link {
+        @include clear-link;
+        @include transit('text-shadow, color');
+        text-transform: uppercase;
+        font-weight: $fBold;
+
+        @include hover() {
+            text-shadow: 0 0 0 #A36EFB, 3px 3px 3px #A36EFB;
+        }
+    }
+
+    &-text {
+        cursor: default;
+    }
+}
+
+@keyframes spin-divider {
+    0% {
+        transform: rotate(330deg);
+        background-color: $cAmber;
+        box-shadow: 0 0 8px $cAquamarine;
+    }
+    50% {
+        transform: rotate(0deg) scale(1.2);
+        background-color: $cPersianIndigo;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+    100% {
+        transform: rotate(30deg);
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+}

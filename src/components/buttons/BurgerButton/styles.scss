@@ -1,0 +1,44 @@
+.burger__btn {
+    position: relative;
+    @include size(30px, 20px);
+    @include clear-button;
+
+    @include hover {
+        .burger__btn-line{
+            box-shadow: 0 0 5px $cHeliotrope, 0 0 5px $cHeliotrope;
+        }
+    }
+
+    &-line {
+        @include size(100%, 3px);
+        @include transit('transform, box-shadow');
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $сGhostWhite;
+        border-radius: 2px;
+
+        &:nth-child(2) {
+            top: calc(50% - 1px);
+        }
+
+        &:last-child {
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    &--active .burger__btn-line {
+        &:first-child {
+            transform: translateY(8.5px) rotate(135deg);
+        }
+
+        &:nth-child(2) {
+            transform: scale(0);
+        }
+
+        &:last-child {
+            transform: translateY(-8.5px) rotate(-135deg);
+        }
+    }
+}

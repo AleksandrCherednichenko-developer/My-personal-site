@@ -1,0 +1,19 @@
+.link-item {
+    @include clear-link;
+    @include display-flex($direction: column, $gap: 10px, $align: center);
+    min-width: 110px;
+
+    &-title {
+        font-weight: $fBold;
+    }
+
+    &-text {
+        @include transit('text-shadow');
+    }
+
+    @include hover() {
+        .link-item-text {
+            text-shadow: 0 0 0 #A36EFB, 3px 3px 3px #A36EFB;
+        }
+    }
+}
