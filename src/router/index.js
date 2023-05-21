@@ -8,15 +8,25 @@ const routes = [
         component: RouterView,
         beforeEnter: Translation.routeMiddleware,
         children: [
-            // {
-            //     path: '',
-            //     name: ROUTE_NAMES.DEFAULT_LAYOUT.routeName,
-            //     redirect: { name: ROUTE_NAMES.ABOUT_PAGE.routeName },
-            // },
             {
                 path: '',
+                name: ROUTE_NAMES.DEFAULT_LAYOUT.routeName,
+                redirect: { name: ROUTE_NAMES.ABOUT_PAGE.routeName },
+            },
+            {
+                path: 'about',
                 name: ROUTE_NAMES.ABOUT_PAGE.routeName,
                 component: () => import('@/views/AboutPage/index.vue'),
+            },
+            {
+                path: 'resume',
+                name: ROUTE_NAMES.RESUME_PAGE.routeName,
+                component: () => import('@/views/ResumePage/index.vue'),
+            },
+            {
+                path: 'contact',
+                name: ROUTE_NAMES.CONTACT_PAGE.routeName,
+                component: () => import('@/views/ContactPage/index.vue'),
             },
         ],
     },

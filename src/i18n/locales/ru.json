@@ -1,15 +1,13 @@
 {
     "locales": {
-        "ru": "Русский",
-        "en": "Английский"
+        "ru": "Russian",
+        "en": "English"
     },
     "navbar": {
-        "home": "Главная",
-        "chat": "Чат",
-        "text": "Генерация текста",
-        "image": "Генерация изображений",
-        "about": "О нас",
+        "about": "Обо мне",
+        "resume": "Резюме",
         "contact": "Контакты"
     },
-    "title": "Интеграция OpenAI"
+    "name": "Aleksandr Cherednichenko",
+    "profession": "Frontend developer"
 }

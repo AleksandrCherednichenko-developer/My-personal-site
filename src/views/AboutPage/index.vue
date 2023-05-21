@@ -1,6 +1,6 @@
 <template>
     <div>
-        AboutPage
+        {{ $t('navbar.about') }}
     </div>
 </template>
 
