@@ -1,0 +1,34 @@
+.text-dividers {
+    @include transit('transform, box-shadow, background-color');
+    position: relative;
+    min-width: 2px;
+    min-height: 20px;
+    background-color: $сGhostWhite;
+    transform: rotate(330deg);
+    box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine;
+
+    @include hover(){
+        animation: spin-divider 3s;
+        transform: rotate(30deg);
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+}
+
+@keyframes spin-divider {
+    0% {
+        transform: rotate(330deg);
+        background-color: $cAmber;
+        box-shadow: 0 0 8px $cAquamarine;
+    }
+    50% {
+        transform: rotate(0deg) scale(1.2);
+        background-color: $cPersianIndigo;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+    100% {
+        transform: rotate(30deg);
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+}

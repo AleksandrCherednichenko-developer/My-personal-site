@@ -1,0 +1,24 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $z-index-100;
+    min-height: var(--hHeader);
+    background-color: $cCinder;
+
+    &.locked {
+        width: 100vw;
+    }
+
+    &__inner {
+        @include display-flex($align: center, $justify: space-between);
+        min-height: var(--hHeader);
+        padding-top: calc-rem(10px);
+        padding-bottom: calc-rem(10px);
+    }
+
+    .controls {
+        @include display-flex($gap: 40px, $align: center);
+    }
+}

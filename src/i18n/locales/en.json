@@ -1,0 +1,68 @@
+{
+	"locales": {
+		"ru": "Russian",
+		"en": "English"
+	},
+	"morning": "Good morning!",
+	"afternoon": "Good afternoon!",
+	"evening": "Good evening!",
+	"night": "Good night!",
+	"navbar": {
+		"about": "About Me",
+		"resume": "Resume",
+		"project": "Project",
+		"contact": "Contact"
+	},
+	"name": "Aleksandr Cherednichenko",
+	"profession": "Frontend Developer / Team Lead",
+	"call": "Call",
+	"write": "Write",
+	"follow": "Follow",
+	"hello": "Hello",
+	"previewText": "Hi, I'm Aleksandr — a frontend engineer who grew from Junior Developer to Team Lead & Project Manager. I build fast, reliable, and scalable web apps with Vue, Nuxt, Vite, TypeScript and modern tooling. I lead cross-functional teams end-to-end, align delivery with business goals, and improve developer experience through clean architecture, testing and automation. I’m looking for product-focused international teams where I can bring impact and continue to grow. If you have any questions, I’ll be happy to answer.",
+	"usefulTitle": "I can be a valuable asset for potential employers because:",
+	"useful": {
+		"1": "Delivered production web apps with Vue/Nuxt and clear ownership of outcomes",
+		"2": "Led ~ 10-15 member cross-functional team (FE, BE, QA, design, analytics)",
+		"3": "Improve performance, DX and release speed through testing and CI/CD",
+		"4": "Communicate clearly with stakeholders and turn goals into shipped features"
+	},
+	"experience": "Experience",
+	"education": "Education",
+	"skills": "Skills",
+	"work1": {
+		"name": "Reelmotion Games",
+		"description": "Joined the company as a Junior Frontend Developer and progressed to Team Lead / Project Manager, leading a more than 10 member cross-functional team (frontend, backend, QA, design, analytics). I took ownership of the full development cycle for multiple key web products, both client-facing and internal, that supported daily operations and business growth.<br><br>Delivered and maintained three major customer web platforms used by thousands of users for interaction with company services, and currently lead the development of a fourth-generation product with improved scalability, UX, and modular architecture. Alongside that, designed and developed internal management systems — a platform administration dashboard and a financial control system for staff scheduling, payments, and reporting.<br><br>Key achievements include improving release efficiency by 40%, reducing production bugs by over 30%, and accelerating frontend performance and build time through architectural refactoring and optimized pipelines. Implemented CI/CD workflows, automated testing (Vitest), and documentation standards that improved development speed and quality.<br><br>As a team lead, I coordinated Agile processes, handled sprint planning and retrospectives, mentored engineers, and ensured clear communication between technical and product teams. Maintained regular contact with stakeholders to align business priorities with technical capabilities. My combined technical and managerial expertise ensured stable delivery, cross-team growth, and consistent improvements to product quality.",
+		"position": "Team Lead / Project Manager",
+		"period": "07.2022 - Present",
+		"skills": "html,sass,git,js,typescript,vue,nuxt,vite,pinia"
+	},
+	"work2": {
+		"name": "AT-Work",
+		"description": "Worked as a frontend developer on a multifunctional HR and e-commerce platform that combined job matching, product trading, and video communication features. Actively collaborated with backend developers, designers, and QA to implement complex user flows and improve product stability.<br><br>Developed interactive UI components, dashboards, and modules for internal users using HTML, SCSS, and JavaScript. Contributed to REST API integration and implemented real-time updates for live video sessions and chat features. Helped design algorithms for matching candidates with job postings, optimizing query speed and UX.<br><br>Introduced small but impactful improvements to the development process — added reusable components, improved build performance, and documented front-end standards. Supported QA in testing and debugging, and maintained close communication with the product team to clarify requirements. This project helped strengthen my understanding of full-cycle development and teamwork in a growing product company.",
+		"position": "Frontend Developer",
+		"period": "07.2021 - 07.2022",
+		"skills": "html,sass,git,js"
+	},
+	"work3": {
+		"name": "Fl.ru",
+		"description": "Started my career as a freelance developer, building static and semi-dynamic websites for small businesses and private clients. Delivered projects end-to-end — from gathering requirements and creating responsive layouts to deploying finished websites.<br><br>Focused on writing clean, semantic HTML and modular SCSS, while continuously improving my JavaScript fundamentals. Gained experience managing multiple projects simultaneously, communicating directly with clients, and balancing deadlines with quality.<br><br>This early experience developed my sense of responsibility, adaptability, and client-oriented mindset — qualities that continue to shape how I approach engineering and teamwork today.",
+		"position": "HTML Developer / Freelancer",
+		"period": "01.2021 - 07.2022",
+		"skills": "html,sass,js"
+	},
+	"education1": {
+		"name": "NOSOV MAGNITOGORSK STATE TECHNICAL UNIVERSITY",
+		"description": "",
+		"location": "Magnitogorsk",
+		"position": "Industrial and civil construction",
+		"period": "09.2014 - 06.2020"
+	},
+	"education2": {
+		"name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
+		"description": "",
+		"location": "Magnitogorsk",
+		"position": "Computer software and automated systems",
+		"period": "09.2009 - 06.2013"
+	}
+}

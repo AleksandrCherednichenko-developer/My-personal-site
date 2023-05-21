@@ -1,0 +1,48 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "es2020",
+        "moduleResolution": "Node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node",
+            "stripe-v3",
+            "vite/client"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "~/*": [
+                "resources/*"
+            ]
+        }
+    },
+    "vueCompilerOptions": {
+        "experimentalSuppressInvalidJsxElementTypeErrors": true
+    },
+    "include": [
+        "resources/**/*",
+        "env.d.ts",
+        "src/**/*",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "public/**/*",
+        "node_modules",
+        "vendor",
+        "src/**/__tests__/*",
+        "src/**/*.spec.*"
+    ]
+}

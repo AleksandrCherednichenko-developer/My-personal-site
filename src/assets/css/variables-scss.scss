@@ -1,0 +1,80 @@
+// Fonts
+$fnManrope: 'Manrope';
+
+// Sizes
+$mwContent: 1280px;
+$pContent: 30px;
+$basePadding: 10px;
+$baseRem: 16px;
+
+// Titles
+$header_h1_FontSize: 40px;
+$header_h2_FontSize: 32px;
+$header_h3_FontSize: 26px;
+$header_h4_FontSize: 24px;
+$header_h5_FontSize: 22px;
+$header_h6_FontSize: 18px;
+
+// Font-weight
+$fLight: 300;
+$fRegular: 400;
+$fMedium: 500;
+$fBold: 700;
+
+// Height
+$hHeader: 60px;
+
+// Width
+$wHeader: 100vw;
+
+// Border
+$baseBorder: 2px solid #33363F;
+$baseRadius: 6px;
+
+// Box-shadow
+$hoverShadow: 2px 2px 10px 0 rgba(black, 0.3);
+
+// Z-index
+$z-index-100: 100;
+$z-index-90: 90;
+$z-index-70: 70;
+$z-index-50: 50;
+$z-index-30: 30;
+$z-index-10: 10;
+
+//Medias
+$bXl: 1400px;
+$bLg: 1200px;
+$bMd: 992px;
+$bSm: 768px;
+$bXs: 576px;
+
+$mXl: '(max-width: #{$bXl - 1})';
+$mLg: '(max-width: #{$bLg - 1})';
+$mMd: '(max-width: #{$bMd - 1})';
+$mSm: '(max-width: #{$bSm - 1})';
+$mXs: '(max-width: #{$bXs - 1})';
+
+$mMoreXl: '(min-width: #{$bXl})';
+$mMoreLg: '(min-width: #{$bLg})';
+$mMoreMd: '(min-width: #{$bMd})';
+$mMoreSm: '(min-width: #{$bSm})';
+$mMoreXs: '(min-width: #{$bXs})';
+
+$bHXl: 1025px;
+$bHLg: 901px;
+$bHMd: 801px;
+$bHSm: 769px;
+$bHXs: 577px;
+
+$mHXl: '(max-height: #{$bHXl - 1})';
+$mHLg: '(max-height: #{$bHLg - 1})';
+$mHMd: '(max-height: #{$bHMd - 1})';
+$mHSm: '(max-height: #{$bHSm - 1})';
+$mHXs: '(max-height: #{$bHXs - 1})';
+
+$bMinWidth: 375px;
+
+$mMinWidth: '(max-width: #{$bMinWidth - 1})';
+$mMaxContent: '(max-width: #{$mwContent + 2 * $pContent})';
+$mPhoneHorizontal: '#{$mMd} and #{$mHXs} and (orientation: landscape)';
