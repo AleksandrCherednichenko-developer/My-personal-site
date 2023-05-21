@@ -1,6 +1,14 @@
 export const ROUTE_NAMES = {
-    HOME_PAGE: {
+    DEFAULT_LAYOUT: {
+        routeName: '',
+        label: 'default_layout',
+    },
+    ABOUT_PAGE: {
         routeName: '/',
-        label: 'home_page',
+        label: 'about_page',
+    },
+    RESUME_PAGE: {
+        routeName: '/',
+        label: 'about_page',
     },
 };

@@ -1,11 +1,24 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, RouterView } from 'vue-router';
 import { ROUTE_NAMES } from '@/constants/routes';
+import Translation from '@/i18n/translation';
 
 const routes = [
     {
-        path: '/',
-        name: ROUTE_NAMES.HOME_PAGE.routeName,
-        component: () => import('@/views/HomePage/index.vue'),
+        path: '/:locale?',
+        component: RouterView,
+        beforeEnter: Translation.routeMiddleware,
+        children: [
+            // {
+            //     path: '',
+            //     name: ROUTE_NAMES.DEFAULT_LAYOUT.routeName,
+            //     redirect: { name: ROUTE_NAMES.ABOUT_PAGE.routeName },
+            // },
+            {
+                path: '',
+                name: ROUTE_NAMES.ABOUT_PAGE.routeName,
+                component: () => import('@/views/AboutPage/index.vue'),
+            },
+        ],
     },
 ];
 

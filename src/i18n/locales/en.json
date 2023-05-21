@@ -1,0 +1,15 @@
+{
+    "locales": {
+        "ru": "Russian",
+        "en": "English"
+    },
+    "navbar": {
+        "home": "Home",
+        "chat": "Chat",
+        "text": "Text generation",
+        "image": "Image generation",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "title": "OpenAI integration"
+}

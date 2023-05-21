@@ -1,0 +1,22 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $z-index-100;
+    min-height: var(--hHeader);
+    background-color: lightgray;
+
+    &.locked{
+        width: 100vw;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: var(--hHeader);
+        padding-top: calc-rem(10px);
+        padding-bottom: calc-rem(10px);
+    }
+}

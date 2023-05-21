@@ -1,0 +1,9 @@
+@supports (height: 100dvh) {
+    .main {
+        height: calc(100dvh - var(--hHeader));
+    }
+}
+
+.main {
+    height: calc(100vh - var(--hHeader));
+}

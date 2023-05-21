@@ -1,0 +1,76 @@
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin transit($props, $duration: var(--dTransit), $delay: 0s) {
+    transition-property: #{$props};
+    transition-duration: $duration;
+    transition-delay: $delay;
+}
+
+@mixin clear-link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+@mixin clear-button {
+    background: none;
+    border: none;
+    color: currentColor;
+    cursor: pointer;
+}
+
+@mixin user-drag-prevent {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@mixin hover($changeActive: false) {
+    @media (hover: hover) {
+        &:hover {
+            @if $changeActive {
+                @content('hover')
+            } @else {
+                @content
+            }
+        }
+    }
+    &:active {
+        @if $changeActive {
+            @content('active')
+        } @else {
+            @content
+        }
+    }
+}
+
+@mixin line-clamp($lineCount: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lineCount;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin custom-scroll($width: 5px, $mozWidth: thin, $trackColor: rgba(lightgray, 0.2), $thumbColor: rgba(gray, 1)) {
+    &::-webkit-scrollbar {
+        @include size($width);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $trackColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumbColor;
+        border-radius: 5px;
+    }
+
+    scrollbar-color: $thumbColor $trackColor;
+    scrollbar-width: $mozWidth;
+}

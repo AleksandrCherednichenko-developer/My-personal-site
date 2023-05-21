@@ -1,0 +1,13 @@
+:root {
+    --rem: #{$baseRem};
+
+    --pContent:#{$pContent};
+
+    --hHeader: #{$hHeader};
+
+    --dTransit: 0.3s;
+
+    @media #{$maxWXl} {
+        --rem: 14px;
+    }
+}
