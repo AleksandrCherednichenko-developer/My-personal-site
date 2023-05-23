@@ -2,7 +2,7 @@
     <button
         class="btn burger__btn"
         :class="{'burger__btn--active' : active}"
-        @click="onClickBtn"
+        @click="()=>onClickBtn()"
     >
         <span class="burger__btn-line" />
         <span class="burger__btn-line" />
