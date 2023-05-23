@@ -1,7 +1,7 @@
 <template>
     <section class="section resume__page">
         <transition
-            name="slide-opacity-right"
+            name="fade-slide-left"
             mode="out-in"
             appear
         >
@@ -15,22 +15,16 @@
                         </h5>
                     </transition>
 
-                    <InfoBlock
-                        :period="$t('work1.period')"
-                        :name="$t('work1.name')"
-                        :position="$t('work1.position')"
-                        :skills="$t('work1.skills')"
-                        :location="$t('work1.location')"
-                        :description="$t('work1.description')"
-                    />
-                    <InfoBlock
-                        :period="$t('work2.period')"
-                        :name="$t('work2.name')"
-                        :position="$t('work2.position')"
-                        :skills="$t('work2.skills')"
-                        :location="$t('work2.location')"
-                        :description="$t('work2.description')"
-                    />
+                    <template v-for="index in 2" :key="index">
+                        <InfoBlock
+                            :period="$t(`work${index}.period`)"
+                            :name="$t(`work${index}.name`)"
+                            :position="$t(`work${index}.position`)"
+                            :skills="$t(`work${index}.skills`)"
+                            :location="$t(`work${index}.location`)"
+                            :description="$t(`work${index}.description`)"
+                        />
+                    </template>
                 </div>
                 <div class="resume__page-education__block">
                     <transition name="fade-enter-transition" mode="out-in" appear>
@@ -39,21 +33,15 @@
                         </h5>
                     </transition>
 
-                    <InfoBlock
-                        :period="$t('education1.period')"
-                        :name="$t('education1.name')"
-                        :position="$t('education1.position')"
-                        :location="$t('education1.location')"
-                        :description="$t('education1.description')"
-                    />
-
-                    <InfoBlock
-                        :period="$t('education2.period')"
-                        :name="$t('education2.name')"
-                        :position="$t('education2.position')"
-                        :location="$t('education2.location')"
-                        :description="$t('education2.description')"
-                    />
+                    <template v-for="index in 2" :key="index">
+                        <InfoBlock
+                            :period="$t(`education${index}.period`)"
+                            :name="$t(`education${index}.name`)"
+                            :position="$t(`education${index}.position`)"
+                            :location="$t(`education${index}.location`)"
+                            :description="$t(`education${index}.description`)"
+                        />
+                    </template>
                 </div>
 
                 <div class="resume__page-skills__block">

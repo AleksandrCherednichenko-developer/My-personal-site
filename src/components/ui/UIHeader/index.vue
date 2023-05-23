@@ -6,8 +6,9 @@
             </transition>
             <transition name="fade-slide-left" mode="out-in" appear>
                 <div class="controls">
-                    <UINavbar />
+                    <UINavbar v-if="!isMd" />
                     <UIToggleLanguages />
+                    <BurgerButton v-if="isMd" @click-burger-button="(active)=>emit('click-burger-button', active)" />
                 </div>
             </transition>
         </div>
@@ -21,9 +22,14 @@ export default {
 </script>
 
 <script setup>
+import { inject } from 'vue';
 import UINavbar from '@/components/ui/UINavbar/index.vue';
 import UILogo from '@/components/ui/UILogo/index.vue';
 import UIToggleLanguages from '@/components/ui/UIToggleLanguages/index.vue';
+import BurgerButton from '@/components/buttons/BurgerButton/index.vue';
+
+const isMd = inject('isMd');
+const emit = defineEmits(['click-burger-button']);
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />

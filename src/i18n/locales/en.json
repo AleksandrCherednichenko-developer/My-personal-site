@@ -16,12 +16,12 @@
     "follow": "Follow",
     "hello": "Hello",
     "previewText": "I am a front-end developer with 2 years of commercial experience, last of which I have been using Vue 3, a state-of-the-art framework for building web user interfaces. I have a showcase of amazing web applications that I have built. I am proficient in HTML, SCSS, JavaScript and other web technologies. I also have a flair for design and base proficiency with graphic design applications (e.g., Figma). I was born in Magnitogorsk, but I moved to Saint Petersburg to pursue my passion in this field. Currently, I am living in Thailand and looking for remote work.",
+    "usefulTitle": "I can be a valuable asset for potential employers because:",
     "useful": {
-        "1": "I can be a valuable asset for potential employers because:",
-        "2": "I have a proven track record of delivering high-quality web applications with Vue 3",
-        "3": "I have excellent communication and collaboration skills",
-        "4": "I have a keen interest in learning new technologies and best practices",
-        "5": "I have a flexible and adaptable mindset"
+        "1": "A proven track record of delivering high-quality web applications with Vue 3",
+        "2": "Excellent communication and collaboration skills",
+        "3": "A keen interest in learning new technologies and best practices",
+        "4": "I have a flexible and adaptive mindset"
     },
     "experience": "Experience",
     "education": "Education",

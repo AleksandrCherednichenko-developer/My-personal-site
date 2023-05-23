@@ -2,21 +2,14 @@
     background-color: $cCinder;
 
     &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: calc-rem(10px);
-        padding-bottom: calc-rem(10px);
+        padding-top: calc-rem(20px);
+        padding-bottom: calc-rem(20px);
         font-size: calc-rem(12px);
     }
 
     &-copyright {
         cursor: default;
-    }
-
-    &-links {
-        display: flex;
-        align-items: flex-start;
-        gap: calc-rem(40px);
+        margin: 0 auto;
+        width: fit-content;
     }
 }

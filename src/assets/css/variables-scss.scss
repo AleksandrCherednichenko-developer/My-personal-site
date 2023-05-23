@@ -42,40 +42,39 @@ $z-index-50: 50;
 $z-index-30: 30;
 $z-index-10: 10;
 
-// Breakpoints
-$brWXl: 1400px;
-$brWLg: 1200px;
-$brWMd: 992px;
-$brWSm: 768px;
-$brWXs: 576px;
-
-$brHXl: 1025px;
-$brHLg: 901px;
-$brHMd: 801px;
-$brHSm: 769px;
-$brHXs: 577px;
-
-$brMinWidth: 375px;
-
 //Medias
-$maxWXl: '(max-width: #{$brWXl - 1})';
-$maxWLg: '(max-width: #{$brWLg - 1})';
-$maxWMd: '(max-width: #{$brWMd - 1})';
-$maxWSm: '(max-width: #{$brWSm - 1})';
-$maxWXs: '(max-width: #{$brWXs - 1})';
+$bXl: 1400px;
+$bLg: 1200px;
+$bMd: 992px;
+$bSm: 768px;
+$bXs: 576px;
 
-$minWXl: '(min-width: #{$brWXl})';
-$minWLg: '(min-width: #{$brWLg})';
-$minWMd: '(min-width: #{$brWMd})';
-$minWSm: '(min-width: #{$brWSm})';
-$minWXs: '(min-width: #{$brWXs})';
+$mXl: '(max-width: #{$bXl - 1})';
+$mLg: '(max-width: #{$bLg - 1})';
+$mMd: '(max-width: #{$bMd - 1})';
+$mSm: '(max-width: #{$bSm - 1})';
+$mXs: '(max-width: #{$bXs - 1})';
 
-$maxHXl: '(max-height: #{$brHXl - 1})';
-$maxHLg: '(max-height: #{$brHLg - 1})';
-$maxHMd: '(max-height: #{$brHMd - 1})';
-$maxHSm: '(max-height: #{$brHSm - 1})';
-$maxHXs: '(max-height: #{$brHXs - 1})';
+$mMoreXl: '(min-width: #{$bXl})';
+$mMoreLg: '(min-width: #{$bLg})';
+$mMoreMd: '(min-width: #{$bMd})';
+$mMoreSm: '(min-width: #{$bSm})';
+$mMoreXs: '(min-width: #{$bXs})';
 
-$mMinWidth: '(max-width: #{$brMinWidth - 1})';
+$bHXl: 1025px;
+$bHLg: 901px;
+$bHMd: 801px;
+$bHSm: 769px;
+$bHXs: 577px;
+
+$mHXl: '(max-height: #{$bHXl - 1})';
+$mHLg: '(max-height: #{$bHLg - 1})';
+$mHMd: '(max-height: #{$bHMd - 1})';
+$mHSm: '(max-height: #{$bHSm - 1})';
+$mHXs: '(max-height: #{$bHXs - 1})';
+
+$bMinWidth: 375px;
+
+$mMinWidth: '(max-width: #{$bMinWidth - 1})';
 $mMaxContent: '(max-width: #{$mwContent + 2 * $pContent})';
-$mPhoneHorizontal: '#{$maxWMd} and #{$maxHXs} and (orientation: landscape)';
+$mPhoneHorizontal: '#{$mMd} and #{$mHXs} and (orientation: landscape)';

@@ -5,36 +5,14 @@
 
             <transition name="fade-slide-top" mode="out-in" appear>
                 <div class="page-inner">
-                    <ProjectBlock
-                        :name="$t('project1.name')"
-                        :description="$t('project1.description')"
-                        :link="$t('project1.link')"
-                        :image="$t('project1.image')"
-                    />
-                    <ProjectBlock
-                        :name="$t('project2.name')"
-                        :description="$t('project2.description')"
-                        :link="$t('project2.link')"
-                        :image="$t('project2.image')"
-                    />
-                    <ProjectBlock
-                        :name="$t('project3.name')"
-                        :description="$t('project3.description')"
-                        :link="$t('project3.link')"
-                        :image="$t('project3.image')"
-                    />
-                    <ProjectBlock
-                        :name="$t('project4.name')"
-                        :description="$t('project4.description')"
-                        :link="$t('project4.link')"
-                        :image="$t('project4.image')"
-                    />
-                    <ProjectBlock
-                        :name="$t('project5.name')"
-                        :description="$t('project5.description')"
-                        :link="$t('project5.link')"
-                        :image="$t('project5.image')"
-                    />
+                    <template v-for="index in 5" :key="index">
+                        <ProjectBlock
+                            :name="$t(`project${index}.name`)"
+                            :description="$t(`project${index}.description`)"
+                            :link="$t(`project${index}.link`)"
+                            :image="$t(`project${index}.image`)"
+                        />
+                    </template>
                 </div>
             </transition>
         </div>

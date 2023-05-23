@@ -28,7 +28,6 @@ export default {
 </script>
 
 <script setup>
-import { computed } from 'vue';
 import UISvgIcon from '@/components/ui/UISvgIcon/index.vue';
 
 const props = defineProps({
@@ -37,12 +36,6 @@ const props = defineProps({
     link: { type: String, default: '' },
     image: { type: String, default: '' },
     imagePath: { type: String, default: 'project' },
-});
-console.log('=>(index.vue:44) props.image', props.image);
-const IMAGE = computed(() => {
-    return !props.imagePath
-        ? `../../assets/image/${props.image}.png`
-        : `../../assets/image/${props.imagePath}/${props.image}.png`;
 });
 </script>
 

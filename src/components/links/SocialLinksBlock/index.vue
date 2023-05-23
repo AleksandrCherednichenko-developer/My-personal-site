@@ -5,25 +5,13 @@
         </p>
         <div class="social__links-inner">
             <a
-                href="https://github.com/AleksandrCherednichenko-developer"
+                v-for="(item, index) in socialLinks"
+                :key="index"
+                :href="item?.link"
                 class="social__link-item"
-                title="github"
+                :title="item?.icon"
             >
-                <UISvgIcon name="github" />
-            </a>
-            <a
-                href="https://t.me/+79090997778"
-                class="social__link-item"
-                title="telegram"
-            >
-                <UISvgIcon name="telegram" />
-            </a>
-            <a
-                href="https://www.linkedin.com/in/aleksandr-cherednichenko-273374250/"
-                class="social__link-item"
-                title="linkedin"
-            >
-                <UISvgIcon name="linkedin" />
+                <UISvgIcon :name="item?.icon" />
             </a>
         </div>
     </div>
@@ -36,8 +24,23 @@ export default {
 </script>
 
 <script setup>
-
+import { ref } from 'vue';
 import UISvgIcon from '@/components/ui/UISvgIcon/index.vue';
+
+const socialLinks = ref([
+    {
+        link: 'https://github.com/AleksandrCherednichenko-developer',
+        icon: 'github',
+    },
+    {
+        link: 'https://t.me/+79090997778',
+        icon: 'telegram',
+    },
+    {
+        link: 'https://github.com/AleksandrCherednichenko-developer',
+        icon: 'linkedin',
+    },
+]);
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />

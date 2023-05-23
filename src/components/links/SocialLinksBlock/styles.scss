@@ -4,6 +4,7 @@
         flex-direction: column;
         align-items: center;
         gap: calc-rem(10px);
+        min-width: 110px;
 
         &-title{
             font-weight: $fBold;

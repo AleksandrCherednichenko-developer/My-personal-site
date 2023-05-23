@@ -2,7 +2,7 @@
     <label class="toggle-languages">
         <transition
             v-if="selectedLocale === 'en'"
-            name="slide-opacity-right"
+            name="fade-slide-left"
             mode="out-in"
             appear
         >
@@ -12,7 +12,7 @@
         </transition>
         <transition
             v-else
-            name="slide-opacity-right"
+            name="fade-slide-left"
             mode="out-in"
             appear
         >
