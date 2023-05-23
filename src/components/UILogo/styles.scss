@@ -4,9 +4,12 @@
     gap: calc-rem(20px);
 
     @include hover() {
-        .logo-dividers{
-            animation: spin-divider 1.5s;
+        .text-dividers{
+            @include transit('transform, box-shadow, background-color', 2s, 5s);
+            animation: spin-divider 3s;
             transform: rotate(30deg);
+            background-color: $cTurquoiseBlue;
+            box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
         }
     }
 
@@ -17,18 +20,8 @@
         font-weight: $fBold;
 
         @include hover() {
-            color: $cPersianIndigo;
-            text-shadow: 5px 2px 5px #A36EFB, 0 10px 35px #A36EFB, 5px 5px 10px #A36EFB;
+            text-shadow: 0 0 0 #A36EFB, 3px 3px 3px #A36EFB;
         }
-    }
-
-    &-dividers {
-        @include transit('transform');
-        position: relative;
-        min-width: 2px;
-        min-height: 20px;
-        background-color: $cPersianIndigo;
-        transform: rotate(330deg);
     }
 
     &-text {
@@ -36,15 +29,20 @@
     }
 }
 
-
 @keyframes spin-divider {
     0% {
         transform: rotate(330deg);
+        background-color: $cAmber;
+        box-shadow: 0 0 8px $cAquamarine;
     }
     50% {
         transform: rotate(0deg) scale(1.2);
+        background-color: $cPersianIndigo;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
     }
     100% {
         transform: rotate(30deg);
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
     }
 }

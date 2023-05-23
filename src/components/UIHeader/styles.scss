@@ -5,7 +5,7 @@
     right: 0;
     z-index: $z-index-100;
     min-height: var(--hHeader);
-    background-color: lightgray;
+    background-color: $cCinder;
 
     &.locked{
         width: 100vw;
@@ -18,5 +18,8 @@
         min-height: var(--hHeader);
         padding-top: calc-rem(10px);
         padding-bottom: calc-rem(10px);
+    }
+    .controls{
+        display: flex;align-items: center;gap: calc-rem(40px);
     }
 }

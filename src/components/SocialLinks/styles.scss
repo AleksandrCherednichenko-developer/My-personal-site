@@ -1,0 +1,34 @@
+.social {
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calc-rem(10px);
+
+        &-title{
+            font-weight: $fBold;
+        }
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            gap: calc-rem(20px);
+        }
+    }
+
+    &__link-item {
+        display: flex;
+
+        svg {
+            @include transit('fill');
+            @include size(25px);
+            fill: $сGhostWhite;
+        }
+
+        @include hover() {
+            svg {
+                fill: $cHeliotrope;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <template>
     <a :href="link" class="link-item">
-        <p class="link-item-title">{{ title }}</p>
+        <p class="link-item-title">{{ $t(`${props.title}`) }}</p>
         <p class="link-item-text">{{ linkText }}</p>
     </a>
 </template>
@@ -20,18 +20,4 @@ const props = defineProps({
 
 </script>
 
-<style  lang="scss" scoped>
-.link-item {
-    @include clear-link;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &-title {
-    }
-
-    &-text {
-
-    }
-}
-</style>
+<style src="./styles.scss" lang="scss" scoped />

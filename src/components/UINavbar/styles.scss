@@ -9,6 +9,7 @@
         @include transit('text-shadow, color');
         position: relative;
         font-weight: $fLight;
+        cursor: pointer;
 
         &:before {
             @include transit('width, opacity');
@@ -19,7 +20,7 @@
             right: 0;
             height: 1px;
             width: 0;
-            background-color: $cPersianIndigo;
+            background-color: $сGhostWhite;
             opacity: 0;
         }
 
@@ -28,7 +29,6 @@
         }
 
         &--active {
-            color: $cPersianIndigo;
 
             &:before{
                 opacity: 1;
@@ -37,8 +37,7 @@
         }
 
         @include hover() {
-            color: $cPersianIndigo;
-            text-shadow: 5px 2px 5px #A36EFB, 0 10px 35px #A36EFB, 5px 5px 10px #A36EFB;
+            text-shadow: 0 0 0 #A36EFB, 3px 3px 3px #A36EFB;
 
             &:before{
                 opacity: 1;

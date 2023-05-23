@@ -1,7 +1,7 @@
 .fade {
     &-enter-active,
     &-leave-active {
-        transition: opacity var(--dTransit) ease;
+        transition: opacity 1s ease;
     }
 
     &-enter-from,
@@ -13,7 +13,7 @@
 
 .fade-enter-transition {
     &-enter-active {
-        transition: opacity calc(2 * var(--dTransit)) ease;
+        transition: opacity calc(2 * 1s) ease;
     }
 
     &-enter-from,
@@ -31,7 +31,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: height, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
         overflow: hidden !important;
     }
 
@@ -45,7 +45,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: transform, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -59,7 +59,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: transform, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -73,7 +73,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: transform, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -87,7 +87,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: transform, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -102,7 +102,7 @@
     &-leave-active {
         min-width: 320px;
         transition-property: transform, opacity;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -116,7 +116,7 @@
     &-enter-active,
     &-leave-active {
         transition-property: transform;
-        transition-duration: var(--dTransit);
+        transition-duration: 1s;
     }
 
     &-enter-from,
@@ -125,45 +125,42 @@
     }
 }
 
-.slide-right {
+.slide-opacity-right {
     &-enter-active,
     &-leave-active {
-        transition-property: transform;
-        transition-duration: var(--dTransit);
+        opacity: 1;
+        transition-property: transform, opacity;
+        transition-duration: 1s;
     }
 
     &-enter-from,
     &-leave-to {
+        opacity: 0;
         transform: translateX(100%);
     }
 }
 
-.bounce-right {
-    &-move {
-        transition: transform 400ms ease-in-out;
-    }
-
+.slide-right {
     &-enter-active,
     &-leave-active {
-        animation-duration: 750ms;
-        animation-fill-mode: both;
+        opacity: 1;
+        transition-property: transform, opacity;
+        transition-duration: 1s;
     }
 
-    &-enter-active {
-        animation-name: bounceInRight;
-    }
-
-    &-leave-active {
-        animation-name: bounceOutRight;
+    &-enter-from,
+    &-leave-to {
+        opacity: 0;
+        transform: translateX(100%);
     }
 }
 
 .modal-window {
     &-enter-active {
-        transition: opacity var(--dTransit);
+        transition: opacity 1s;
 
         .modal {
-            transition: transform var(--dTransit);
+            transition: transform 1s;
         }
     }
 

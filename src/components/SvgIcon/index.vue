@@ -1,5 +1,5 @@
 <template>
-    <component :is="svgIcon" :key="props.name" />
+    <component :is="icon" :key="props.name" class="icon" />
 </template>
 
 <script>
@@ -9,26 +9,18 @@ export default {
 </script>
 
 <script setup>
-import { ref, defineProps, onMounted, watchEffect } from 'vue';
+import { defineProps, defineAsyncComponent } from 'vue';
 
 const props = defineProps({
     name: { type: String, required: true },
     pathToIcon: { type: String, default: '' },
 });
 
-const svgIcon = ref(null);
-
-const getIcon = async () => {
-    const data = !props.pathToIcon
-        ? await import(`../../../assets/icons/${props.name}.svg`)
-        : await import(`../../../assets/icons/${props.pathToIcon}/${props.name}.svg`);
-
-    svgIcon.value = await data;
-};
-
-onMounted(() => {
-    watchEffect(() => {
-        getIcon();
-    });
+const icon = defineAsyncComponent(() => {
+    return !props.pathToIcon
+        ? import(`../../assets/icons/${props.name}.svg?component`)
+        : import(`../../assets/icons/${props.pathToIcon}/${props.name}.svg?component`);
 });
 </script>
+
+<style src="./styles.scss" lang="scss" scoped />

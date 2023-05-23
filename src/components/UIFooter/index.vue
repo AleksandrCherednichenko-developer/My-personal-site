@@ -1,18 +1,21 @@
 <template>
     <footer class="footer">
-        <div class="footer-inner content-container">
-            <p class="footer-copyright">
-                ©2023 by AleksandrCherednichenko
-            </p>
-            <div class="footer-links">
-                <FooterLink
-                    v-for="(item, i) in footerLinks"
-                    :key="i"
-                    v-bind="item"
-                />
-                <!--                <a href="https://t.me/+79090997778">link tg</a>-->
-                <!--                <a href="https://www.linkedin.com/in/aleksandr-cherednichenko-273374250/">link linkedin</a>-->
-            </div>
+        <div class="footer__inner content-container">
+            <transition name="fade-slide-right" mode="out-in" appear>
+                <p class="footer-copyright">
+                    ©2023 by AleksandrCherednichenko
+                </p>
+            </transition>
+            <transition name="fade-slide-left" mode="out-in" appear>
+                <div class="footer-links">
+                    <FooterLink
+                        v-for="(item, i) in footerLinks"
+                        :key="i"
+                        v-bind="item"
+                    />
+                    <SocialLinks />
+                </div>
+            </transition>
         </div>
     </footer>
 </template>
@@ -26,6 +29,7 @@ export default {
 <script setup>
 import { ref } from 'vue';
 import FooterLink from '@/components/FooterLink/index.vue';
+import SocialLinks from '@/components/SocialLinks/index.vue';
 
 const footerLinks = ref({
     phone: {
@@ -34,7 +38,7 @@ const footerLinks = ref({
         link: 'tel: +79090997778',
     },
     mail: {
-        title: 'mail',
+        title: 'write',
         linkText: 'acherednichenko174@gmail.com',
         link: 'mailto:acherednichenko174@gmail.com',
     },

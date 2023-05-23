@@ -1,7 +1,9 @@
 <template>
-    <div>
-        {{ $t('navbar.about') }}
-    </div>
+    <section class="about__page">
+        <div class="about__page-inner content-container">
+            <InfoCard />
+        </div>
+    </section>
 </template>
 
 <script>
@@ -10,8 +12,8 @@ export default {
 };
 </script>
 
-<script setup></script>
+<script setup>
+import InfoCard from '@/components/InfoCard/index.vue';
+</script>
 
-<style scoped>
-
-</style>
+<style src="./styles.scss" lang="scss" scoped />

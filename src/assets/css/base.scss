@@ -18,7 +18,8 @@
 html, body {
     @include transit('background-color, color');
     height: 100vh;
-    color: black;
+    color: $сGhostWhite;
+    background-color: $cVulcan;
     font-family: $fnManrope;
     font-weight: $fRegular;
     font-size: var(--rem);
@@ -37,5 +38,6 @@ html, body {
 
 .main {
     flex-grow: 1;
+    display: flex;
 }
 

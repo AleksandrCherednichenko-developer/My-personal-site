@@ -1,0 +1,60 @@
+.resume__page {
+    width: 100%;
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calc-rem(40px);
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        gap: calc-rem(30px);
+        font-size: calc-rem(30px);
+        cursor: default;
+        margin-top: calc-rem(20px);
+
+        @include hover() {
+            .text-dividers {
+                @include transit('transform, box-shadow, background-color', 2s, 5s);
+                animation: spin-divider 3s;
+                transform: rotate(30deg);
+                background-color: $cTurquoiseBlue;
+                box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+            }
+        }
+    }
+
+    &-experience__block,
+    &-education__block {
+        display: flex;
+        flex-direction: column;
+        gap: calc-rem(30px);
+
+        .title {
+            font-size: calc-rem(20px);
+            font-weight: $fBold;
+        }
+    }
+}
+
+
+@keyframes spin-divider {
+    0% {
+        transform: rotate(330deg);
+        background-color: $cAmber;
+        box-shadow: 0 0 8px $cAquamarine;
+    }
+    50% {
+        transform: rotate(0deg) scale(1.2);
+        background-color: $cButtercup;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+    100% {
+        transform: rotate(30deg);
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
+    }
+}

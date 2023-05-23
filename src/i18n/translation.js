@@ -11,7 +11,7 @@ const Translation = {
     },
 
     get currentLocale () {
-        return i18n.global.locale.value;
+        return i18n.global?.locale.value;
     },
 
     set currentLocale (newLocale) {

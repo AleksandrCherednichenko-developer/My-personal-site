@@ -9,5 +9,49 @@
         "contact": "Contact"
     },
     "name": "Aleksandr Cherednichenko",
-    "profession": "Frontend developer"
+    "profession": "Frontend developer",
+    "call": "Call",
+    "write": "Write",
+    "follow": "Follow",
+    "hello": "Hello",
+    "previewText": "I am a talented front-end developer with 2 years of commercial experience, last of which I have been using Vue 3, a state-of-the-art framework for building web user interfaces. I have a showcase of amazing web applications that I have built. I am proficient in HTML, SCSS, JavaScript and other web technologies. I also have a flair for design and base proficiency with graphic design applications (e.g., Figma). I was born in Magnitogorsk, but I moved to Saint Petersburg to pursue my passion in this field. Currently, I am living in Thailand and looking for remote work.",
+    "useful": {
+        "1": "I can be a valuable asset for potential employers because:",
+        "2": "I have a proven track record of delivering high-quality web applications with Vue 3",
+        "3": "I have excellent communication and collaboration skills",
+        "4": "I have a keen interest in learning new technologies and best practices",
+        "5": "I have a flexible and adaptable mindset"
+    },
+    "experience": "Experience",
+    "education": "Education",
+    "work1": {
+        "name": "AT-Work",
+        "description": "Компания которая занимаеться разработкой сервиса, который включает в себя поиск и найм специалистов, размещение объявлений о продаже товаров, а также подбор исполнителей услуг",
+        "location": "Saint Petersburg",
+        "position": "HTML-developer",
+        "period": "09.2021 - 06.2022",
+        "skills": "html,sass,git,js"
+    },
+    "work2": {
+        "name": "Reelmotion Games",
+        "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
+        "location": "Saint Petersburg - Thailand",
+        "position": "Frontend-developer",
+        "period": "06.2022 - Present",
+        "skills": "html,sass,git,js,vue"
+    },
+    "education1": {
+        "name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
+        "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
+        "location": "Magnitogorsk",
+        "position": "Computer software and automated systems",
+        "period": "09.2009 - 06.2013"
+    },
+    "education2": {
+        "name": "NOSOV MAGNITOGORSK STATE TECHNICAL UNIVERSITY",
+        "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
+        "location": "Magnitogorsk",
+        "position": "Industrial and civil construction",
+        "period": "09.2014 - 06.2020"
+    }
 }
