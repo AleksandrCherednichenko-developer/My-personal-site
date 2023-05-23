@@ -11,6 +11,10 @@ export const ROUTE_NAMES = {
         routeName: 'RESUME_PAGE',
         label: 'resume_page',
     },
+    PROJECT_PAGE: {
+        routeName: 'PROJECT_PAGE',
+        label: 'project_page',
+    },
     CONTACT_PAGE: {
         routeName: 'CONTACT_PAGE',
         label: 'contact_page',

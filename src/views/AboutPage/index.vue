@@ -1,7 +1,7 @@
 <template>
-    <section class="about__page">
-        <div class="about__page-inner content-container">
-            <InfoCard />
+    <section class="section about__page">
+        <div class="page-inner content-container">
+            <BaseInfoBlock />
         </div>
     </section>
 </template>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <script setup>
-import InfoCard from '@/components/InfoCard/index.vue';
+import BaseInfoBlock from '@/components/blocks/BaseInfoBlock/index.vue';
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />

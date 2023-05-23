@@ -140,21 +140,6 @@
     }
 }
 
-.slide-right {
-    &-enter-active,
-    &-leave-active {
-        opacity: 1;
-        transition-property: transform, opacity;
-        transition-duration: 1s;
-    }
-
-    &-enter-from,
-    &-leave-to {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-}
-
 .modal-window {
     &-enter-active {
         transition: opacity 1s;

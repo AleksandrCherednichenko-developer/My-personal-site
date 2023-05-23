@@ -14,7 +14,8 @@
         "vue-router": "^4.2.0",
         "vue-i18n": "^9.2.2",
         "@intlify/unplugin-vue-i18n": "^0.8.2",
-        "mitt": "^3.0.0"
+        "mitt": "^3.0.0",
+        "@vueuse/core": "^9.2.0"
     },
     "devDependencies": {
         "sass": "^1.55.0",

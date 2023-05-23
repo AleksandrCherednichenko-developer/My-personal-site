@@ -10,4 +10,14 @@
 .section{
     padding-top: var(--pContent);
     padding-bottom: var(--pContent);
+    width: 100%;
+}
+
+.page-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc-rem(50px);
 }

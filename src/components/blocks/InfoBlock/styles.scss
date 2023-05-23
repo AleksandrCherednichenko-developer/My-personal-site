@@ -1,0 +1,55 @@
+.info__block {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: calc-rem(30px);
+    max-width: 700px;
+    background-color: $cEbonyClay;
+    border-radius: calc-rem(12px);
+    padding: calc-rem(30px);
+    cursor: default;
+    box-shadow: 5px 5px 10px -2px $cPersianIndigo;
+
+    &-title {
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        gap: calc-rem(10px);
+
+        &-period {
+            font-size: calc-rem(18px);
+            font-weight: $fBold;
+            color: $cAmber;
+            white-space: nowrap;
+        }
+
+        &-name {
+            font-size: calc-rem(18px);
+            font-weight: $fBold;
+        }
+
+        &-skills{
+            display: flex;
+            align-items: center;
+            gap: calc-rem(10px);
+
+            .skills-item{
+                @include size(20px);
+            }
+        }
+
+        &-position {
+            font-size: calc-rem(14px);
+        }
+
+        &-location {
+            font-size: calc-rem(14px);
+            font-weight: $fBold;
+        }
+    }
+
+    &-text {
+        &-description {
+
+        }
+    }
+}

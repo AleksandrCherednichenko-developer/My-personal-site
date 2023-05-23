@@ -24,6 +24,11 @@ const routes = [
                 component: () => import('@/views/ResumePage/index.vue'),
             },
             {
+                path: 'project',
+                name: ROUTE_NAMES.PROJECT_PAGE.routeName,
+                component: () => import('@/views/ProjectPage/index.vue'),
+            },
+            {
                 path: 'contact',
                 name: ROUTE_NAMES.CONTACT_PAGE.routeName,
                 component: () => import('@/views/ContactPage/index.vue'),
