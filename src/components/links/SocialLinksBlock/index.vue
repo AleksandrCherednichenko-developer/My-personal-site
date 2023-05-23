@@ -37,7 +37,7 @@ const socialLinks = ref([
         icon: 'telegram',
     },
     {
-        link: 'https://github.com/AleksandrCherednichenko-developer',
+        link: 'https://www.linkedin.com/in/aleksandr-cherednichenko-273374250',
         icon: 'linkedin',
     },
 ]);

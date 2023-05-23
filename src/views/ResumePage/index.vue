@@ -15,7 +15,7 @@
                         </h5>
                     </transition>
 
-                    <template v-for="index in 2" :key="index">
+                    <template v-for="index in 3" :key="index">
                         <InfoBlock
                             :period="$t(`work${index}.period`)"
                             :name="$t(`work${index}.name`)"

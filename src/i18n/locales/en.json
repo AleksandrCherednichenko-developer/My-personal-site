@@ -27,20 +27,28 @@
     "education": "Education",
     "skills": "Skills",
     "work1": {
-        "name": "AT-Work",
-        "description": "Компания которая занимаеться разработкой сервиса, который включает в себя поиск и найм специалистов, размещение объявлений о продаже товаров, а также подбор исполнителей услуг",
-        "location": "Saint Petersburg",
-        "position": "HTML-developer",
-        "period": "09.2021 - 06.2022",
-        "skills": "html,sass,git,js"
-    },
-    "work2": {
         "name": "Reelmotion Games",
         "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
         "location": "Saint Petersburg - Thailand",
         "position": "Frontend-developer",
-        "period": "06.2022 - Present",
+        "period": "07.2022 - Present",
         "skills": "html,sass,git,js,vue"
+    },
+    "work2": {
+        "name": "AT-Work",
+        "description": "Компания которая занимаеться разработкой сервиса, который включает в себя поиск и найм специалистов, размещение объявлений о продаже товаров, а также подбор исполнителей услуг",
+        "location": "Saint Petersburg",
+        "position": "Frontend-developer",
+        "period": "07.2021 - 07.2022",
+        "skills": "html,sass,git,js"
+    },
+    "work3": {
+        "name": "Fl.ru",
+        "description": "Fulfillment of orders from freelance exchanges, development of static pages",
+        "location": "Saint Petersburg",
+        "position": "HTML-developer",
+        "period": "01.2021 - 07.2022",
+        "skills": "html,sass"
     },
     "education1": {
         "name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
@@ -82,7 +90,7 @@
     },
     "project5": {
         "name": "Ad display page",
-        "description": "A page for displaying job vacancies on the site, for finding potential employees. The functionality to remember selected search filters has been implemented. Further integration was carried out with the Bitrix CMS.3",
+        "description": "A page for displaying job vacancies on the site, for finding potential employees. The functionality to remember selected search filters has been implemented. Further integration was carried out with the Bitrix CMS.",
         "link": "https://github.com/AleksandrCherednichenko-developer/Employment",
         "image": "project-5"
     }
