@@ -1,0 +1,16 @@
+.aside__panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $cCinder;
+    margin-left: auto;
+    padding: calc-rem(20px) calc-rem(40px);
+
+    &-navbar {
+        height: 100%;
+
+        :deep(.navbar__inner) {
+            flex-direction: column;
+        }
+    }
+}

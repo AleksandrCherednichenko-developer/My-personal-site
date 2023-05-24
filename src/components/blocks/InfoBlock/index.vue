@@ -1,5 +1,5 @@
 <template>
-    <div class="section info__block">
+    <div class="info__block">
         <div class="info__block-title">
             <p class="info__block-title-period">
                 {{ props.period }}

@@ -7,6 +7,10 @@
     border-radius: 12px;
     box-shadow: 5px 5px 10px -2px #471795;
 
+    @media #{$mXs}{
+        flex-direction: column;
+    }
+
     &:before{
         content: '';
         position: absolute;
@@ -20,7 +24,6 @@
     &-text {
         display: flex;
         flex-direction: column;
-        //gap: calc-rem(30px);
         max-width: 400px;
     }
 
@@ -40,6 +43,12 @@
         width: fit-content;
         margin-top: auto;
 
+        @media #{$mXs}{
+            position: absolute;
+            top: calc-rem(20px);
+            right: calc-rem(20px);
+        }
+
         @include hover() {
             .project__block-link-icon {
                 background-color: rgba($cPersianIndigo, 0.7);
@@ -58,10 +67,14 @@
     }
 
     &-image {
-        width: 230px;
-        height: 230px;
-        border-radius: 12px;
+        @include size(230px);
+        border-radius: calc-rem(12px);
         overflow: hidden;
+
+        @media #{$mXs}{
+            @include size(180px);
+            margin: 0 auto;
+        }
 
         .project-image {
             @include size(100%);

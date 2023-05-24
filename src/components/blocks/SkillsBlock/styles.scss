@@ -1,17 +1,24 @@
 .skills__block {
     display: grid;
-    grid-template-columns: 200px minmax(100px, 500px);
+    grid-template-columns: 200px minmax(200px, 600px);
     gap: calc-rem(30px);
     max-width: 700px;
     background-color: $cEbonyClay;
     border-radius: calc-rem(12px);
     padding: calc-rem(30px);
     cursor: default;
-    box-shadow: 5px 5px 10px -2px $cPersianIndigo;
+    box-shadow: 5px 5px 10px $cPersianIndigo;
+
+    @media #{$mXs} {
+        grid-template-columns: auto minmax(100px, 500px);
+        gap: calc-rem(20px);
+        padding: calc-rem(20px);
+    }
 
     &-text {
         font-size: calc-rem(16px);
         font-weight: $fBold;
+        white-space: nowrap;
     }
 
     &-line {

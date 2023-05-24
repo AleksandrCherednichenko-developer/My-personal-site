@@ -4,10 +4,6 @@
     gap: calc-rem(20px);
     cursor: pointer;
 
-    &-text{
-        z-index: -1;
-    }
-
     &-label {
         position: relative;
         display: inline-block;

@@ -8,6 +8,10 @@
 
         &-title{
             font-weight: $fBold;
+
+            @media #{$mXs}{
+                display: none;
+            }
         }
 
         &-inner {

@@ -7,7 +7,7 @@
             <transition name="fade-slide-left" mode="out-in" appear>
                 <div class="controls">
                     <UINavbar v-if="!isMd" />
-                    <UIToggleLanguages />
+                    <UIToggleLanguages v-if="!isXs" />
                     <BurgerButton v-if="isMd" @click-burger-button="(active)=>emit('click-burger-button', active)" />
                 </div>
             </transition>
@@ -29,6 +29,7 @@ import UIToggleLanguages from '@/components/ui/UIToggleLanguages/index.vue';
 import BurgerButton from '@/components/buttons/BurgerButton/index.vue';
 
 const isMd = inject('isMd');
+const isXs = inject('isXs');
 const emit = defineEmits(['click-burger-button']);
 </script>
 

@@ -19,4 +19,14 @@
     --bHMd: #{$bHMd};
     --bHSm: #{$bHSm};
     --bHXs: #{$bHXs};
+
+    @media #{$mLg}, #{$mHLg} {
+        --rem: 14px;
+        --hHeader: 50px;
+    }
+
+    @media #{$mSm}, #{$mHSm} {
+        --rem: 12px;
+        --pContent: 20px;
+    }
 }

@@ -3,7 +3,13 @@
     align-items: center;
     gap: calc-rem(30px);
     font-size: calc-rem(30px);
+    font-weight: $fBold;
     cursor: pointer;
+
+    @media #{$mXs} {
+        gap: calc-rem(20px);
+        font-size: calc-rem(25px);
+    }
 
     @include hover() {
         .text-dividers {
