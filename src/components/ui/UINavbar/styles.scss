@@ -1,0 +1,47 @@
+.navbar {
+    &__inner {
+        display: flex;
+        gap: calc-rem(20px);
+    }
+
+    &__item {
+        @include clear-link;
+        @include transit('text-shadow, color');
+        position: relative;
+        font-weight: $fLight;
+        cursor: pointer;
+
+        &:before {
+            @include transit('width, opacity');
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            width: 0;
+            background-color: $сGhostWhite;
+            opacity: 0;
+        }
+
+        &-text {
+            text-transform: uppercase;
+        }
+
+        &--active {
+            &:before{
+                opacity: 1;
+                width: 100%;
+            }
+        }
+
+        @include hover() {
+            text-shadow: 0 0 0 #A36EFB, 3px 3px 3px #A36EFB;
+
+            &:before{
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+}

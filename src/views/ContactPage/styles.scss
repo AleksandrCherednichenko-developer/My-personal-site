@@ -1,0 +1,39 @@
+.contact__page {
+    .page-inner {
+        @media #{$mXs}{
+            gap: calc-rem(70px);
+        }
+    }
+
+    &-inner {
+        justify-content: start;
+    }
+
+    .useful__list {
+        display: flex;
+        flex-direction: column;
+        gap: calc-rem(20px);
+
+        &-title {
+            font-size: calc-rem(18px);
+            font-weight: $fBold;
+        }
+
+        &-items {
+            list-style: circle;
+        }
+
+        &-item {
+        }
+    }
+
+    .contact__links {
+        display: flex;
+        align-items: center;
+        gap: calc-rem(40px);
+
+        @media #{$mXs}{
+            flex-direction: column;
+        }
+    }
+}
