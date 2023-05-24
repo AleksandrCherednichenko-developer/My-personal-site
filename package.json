@@ -1,7 +1,7 @@
 {
     "name": "my-personal-website",
     "homepage": "https://AleksandrCherednichenko-developer.github.io/My-personal-site/",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": true,
     "scripts": {
         "dev": "vite",
