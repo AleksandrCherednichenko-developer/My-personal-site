@@ -1,5 +1,5 @@
 <template>
-    <div class="info__block">
+    <div class="info__block" :class="{'hide-info':props.noInfoBlock}">
         <div class="info__block-title">
             <p class="info__block-title-period">
                 {{ props.period }}
@@ -22,7 +22,7 @@
                 />
             </div>
         </div>
-        <div class="info__block-text">
+        <div v-if="!props.noInfoBlock" class="info__block-text">
             <p class="info__block-text-description">
                 {{ props.description }}
             </p>
@@ -46,6 +46,7 @@ const props = defineProps({
     skills: { type: String, default: '' },
     description: { type: String, default: '' },
     location: { type: String, default: '' },
+    noInfoBlock: { type: Boolean },
 });
 
 const skills = props.skills.split(',');

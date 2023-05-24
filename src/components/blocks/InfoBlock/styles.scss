@@ -17,6 +17,10 @@
         padding: calc-rem(20px);
     }
 
+    &.hide-info{
+        display: flex;
+    }
+
     &-title {
         display: flex;
         flex-direction: column;

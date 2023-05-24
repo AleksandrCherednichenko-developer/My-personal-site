@@ -36,7 +36,7 @@
     },
     "work2": {
         "name": "AT-Work",
-        "description": "Компания которая занимаеться разработкой сервиса, который включает в себя поиск и найм специалистов, размещение объявлений о продаже товаров, а также подбор исполнителей услуг",
+        "description": "A company engaged in the development of a service that includes the search and hiring of specialists, the placement of advertisements for the sale of goods, as well as the selection of service providers.",
         "location": "Saint Petersburg",
         "position": "Frontend-developer",
         "period": "07.2021 - 07.2022",
@@ -51,18 +51,18 @@
         "skills": "html,sass"
     },
     "education1": {
-        "name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
-        "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
-        "location": "Magnitogorsk",
-        "position": "Computer software and automated systems",
-        "period": "09.2009 - 06.2013"
-    },
-    "education2": {
         "name": "NOSOV MAGNITOGORSK STATE TECHNICAL UNIVERSITY",
-        "description": "Компания специализирующаяся на разработке уникальных гемблинг проектов для онлайна, а так же на социальные проекты и i-gaming индустрию",
+        "description": "",
         "location": "Magnitogorsk",
         "position": "Industrial and civil construction",
         "period": "09.2014 - 06.2020"
+    },
+    "education2": {
+        "name": "MAGNITOGORSK INDUSTRIAL COLLEGE",
+        "description": "",
+        "location": "Magnitogorsk",
+        "position": "Computer software and automated systems",
+        "period": "09.2009 - 06.2013"
     },
     "project1": {
         "name": "My personal website",
