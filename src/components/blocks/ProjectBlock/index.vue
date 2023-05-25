@@ -14,7 +14,7 @@
         <div class="project__block-image">
             <img
                 class="project-image"
-                :src="`/images/${props.image}.jpg`"
+                :src="dynamicImages(`/public/images/${props.image}.jpg`)"
                 alt="image"
             >
         </div>
@@ -29,6 +29,7 @@ export default {
 
 <script setup>
 import UISvgIcon from '@/components/ui/UISvgIcon/index.vue';
+import dynamicImages from '@/composables/dynamic-images';
 
 const props = defineProps({
     name: { type: String, default: '' },

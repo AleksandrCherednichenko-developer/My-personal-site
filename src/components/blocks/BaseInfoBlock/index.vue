@@ -4,7 +4,7 @@
             <div class="card__info">
                 <div class="card__info-preview">
                     <div class="image-wrapper">
-                        <img class="preview-image" src="/images/image-1.jpg" alt="image">
+                        <img class="preview-image" :src="dynamicImages(`/public/images/image-1.jpg`)" alt="image">
                     </div>
 
                     <div class="text-wrapper">
@@ -69,6 +69,7 @@ export default {
 
 <script setup>
 import UISvgIcon from '@/components/ui/UISvgIcon/index.vue';
+import dynamicImages from '@/composables/dynamic-images';
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />
