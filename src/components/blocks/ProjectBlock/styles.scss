@@ -31,6 +31,7 @@
         font-size: calc-rem(24px);
         font-weight: $fBold;
         margin-bottom: calc-rem(20px);
+        max-width: 80%;
     }
 
     &-description {

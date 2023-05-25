@@ -77,19 +77,19 @@
         "image": "project-2"
     },
     "project3": {
-        "name": "Create a letter of recommendation",
+        "name": "Создание рекомендательного письма",
         "description": "В этом проекте реализовани функционал создания рекомендательного письма. Проект был написан на vanila js. В процессе заполнения данных осуществляеться сохранение уже заполненных данных",
         "link": "https://github.com/AleksandrCherednichenko-developer/letter_of_recomendation",
         "image": "project-3"
     },
     "project4": {
-        "name": "Create a new resume",
+        "name": "Создание резюме",
         "description": "Проект по созданию нового резюме, для портала аналагичного HH. Написан с использованием препроцессора Sass, основной функционал написан на vanilla js",
         "link": "https://github.com/AleksandrCherednichenko-developer/New_resume",
         "image": "project-4"
     },
     "project5": {
-        "name": "Ad display page",
+        "name": "Страница вакансий",
         "description": "Страница для отображения вакансий на сайте, для поиска потенциальных работников. Реализован функционал запомнить выбранные фильтры для поиска. Дальнейшая интеграция осуществлялась с CMS Bitrix",
         "link": "https://github.com/AleksandrCherednichenko-developer/Employment",
         "image": "project-5"
