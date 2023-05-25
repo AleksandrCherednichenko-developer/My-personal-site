@@ -4,7 +4,7 @@
             <div class="card__info">
                 <div class="card__info-preview">
                     <div class="image-wrapper">
-                        <img class="preview-image" src="/images/photo/image-1.jpg" alt="image">
+                        <img class="preview-image" src="/images/image-1.jpg" alt="image">
                     </div>
 
                     <div class="text-wrapper">

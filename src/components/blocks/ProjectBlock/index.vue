@@ -14,7 +14,7 @@
         <div class="project__block-image">
             <img
                 class="project-image"
-                :src="`/images/project/${props.image}.jpg`"
+                :src="`/images/${props.image}.jpg`"
                 alt="image"
             >
         </div>
