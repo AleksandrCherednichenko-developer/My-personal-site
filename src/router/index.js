@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouterView } from 'vue-router';
+import { createRouter, createWebHashHistory, RouterView } from 'vue-router';
 import { ROUTE_NAMES } from '@/constants/routes';
 import Translation from '@/i18n/translation';
 
@@ -38,7 +38,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior (to, from) {
         return { top: 0 };
