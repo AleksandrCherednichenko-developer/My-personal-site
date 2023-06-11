@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper-c27b6911.js";import{o as e,c as t}from"./index-ed1800c7.js";const _={name:"UITextDividers"},o={class:"text-dividers"};function c(a,r,n,d,i,p){return e(),t("span",o)}const m=s(_,[["render",c],["__scopeId","data-v-a8b8d3f0"]]);export{m as U};
