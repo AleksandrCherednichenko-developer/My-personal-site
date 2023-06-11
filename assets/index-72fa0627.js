@@ -1,1 +1,0 @@
-import{_ as s}from"./_plugin-vue_export-helper-c27b6911.js";import{o,c as t,q as c}from"./index-ed1800c7.js";const _={name:"BackgroundLayout"},n={class:"background-layout"};function a(e,r,d,f,l,p){return o(),t("div",n,[c(e.$slots,"default",{},void 0,!0)])}const m=s(_,[["render",a],["__scopeId","data-v-11c5e65f"]]);export{m as default};
