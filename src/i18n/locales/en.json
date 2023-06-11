@@ -66,7 +66,7 @@
     },
     "project1": {
         "name": "My personal website",
-        "description": "My website is a portfolio. The project is written in Vue 3 Composition API, in conjunction with the Vite builder. Used: EsLint, i18n. I developed the design based on examples of methods found on the Internet",
+        "description": "My website is a portfolio. The project is written in Vue 3 Composition API, in conjunction with the Vite builder. Used: EsLint, i18n. The design was developed according to the examples of layouts found on the Internet",
         "link": "https://github.com/AleksandrCherednichenko-developer/My-personal-site",
         "image": "project-1"
     },

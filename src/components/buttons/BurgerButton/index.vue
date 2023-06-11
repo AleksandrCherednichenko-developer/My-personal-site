@@ -1,6 +1,7 @@
 <template>
     <button
         class="btn burger__btn"
+        aria-label="burger button"
         :class="{'burger__btn--active' : active}"
         @click="()=>onClickBtn()"
     >

@@ -8,7 +8,7 @@
         @include clear-link;
         @include transit('text-shadow, color');
         position: relative;
-        font-weight: $fLight;
+        font-weight: $fRegular;
         cursor: pointer;
 
         &:before {
