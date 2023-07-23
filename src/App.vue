@@ -1,7 +1,5 @@
 <template>
-    <UIHeader
-        @click-burger-button="(active)=>onToggleNavbar(active)"
-    />
+    <UIHeader @click-burger-button="(active)=>onToggleNavbar(active)" />
     <DefaultLayout />
     <UIFooter />
     <BackgroundLayout :class="{'background-layout--active':activeNavbar}">

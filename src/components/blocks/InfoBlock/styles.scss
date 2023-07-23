@@ -1,4 +1,5 @@
 .info__block {
+    @include transit('box-shadow');
     position: relative;
     display: grid;
     grid-template-columns: 200px auto;
@@ -8,7 +9,11 @@
     border-radius: calc-rem(12px);
     padding: calc-rem(30px);
     cursor: default;
-    box-shadow: 5px 5px 10px -2px $cPersianIndigo;
+    box-shadow: inset 0 0 0px $cPersianIndigo, 0 0 15px $cPersianIndigo;
+
+    @include hover(){
+        box-shadow: inset 0 0 30px $cPersianIndigo, 0 0 0px $cPersianIndigo;
+    }
 
     @media #{$mXs} {
         display: flex;
