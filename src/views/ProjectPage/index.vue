@@ -1,15 +1,11 @@
 <template>
     <section class="section project__page">
-        <transition
-            name="fade-slide-left"
-            mode="out-in"
-            appear
-        >
-            <div class="page-inner content-container">
-                <UITitlePage title="navbar.project" />
+        <div class="page-inner content-container">
+            <UITitlePage title="navbar.project" />
 
+            <transition name="fade-slide-top" mode="out-in" appear>
                 <div class="page-inner">
-                    <template v-for="index in 5" :key="index">
+                    <template v-for="index in 6" :key="index">
                         <ProjectBlock
                             :name="$t(`project${index}.name`)"
                             :description="$t(`project${index}.description`)"
@@ -18,8 +14,8 @@
                         />
                     </template>
                 </div>
-            </div>
-        </transition>
+            </transition>
+        </div>
     </section>
 </template>
 

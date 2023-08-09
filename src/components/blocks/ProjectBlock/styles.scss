@@ -1,26 +1,16 @@
 .project__block {
-    @include transit('box-shadow');
     position: relative;
-    display: flex;
-    gap: calc-rem(20px);
-    padding: calc-rem(20px);
+    @include display-flex($gap: 20px);
     background-color: $cEbonyClay;
     border-radius: 12px;
-    box-shadow: inset 0 0 0px $cPersianIndigo, 0 0 15px $cPersianIndigo;
-
-    @include hover() {
-        box-shadow: inset 0 0 30px $cPersianIndigo, 0 0 0px $cPersianIndigo;
-        
-        .project__block-name {
-            text-shadow: 0 0 20px $cPersianIndigo, 0 0 10px $cPersianIndigo;
-        }
-    }
+    box-shadow: inset -3px -3px 40px rgba($cPersianIndigo, 0.2), 3px 3px 10px rgba($cPersianIndigo, 0.7);
+    padding: calc-rem(20px);
 
     @media #{$mXs}{
         flex-direction: column;
     }
 
-    &:before {
+    &:before{
         content: '';
         position: absolute;
         top: calc-rem(18px);
@@ -31,18 +21,14 @@
     }
 
     &-text {
-        display: flex;
-        flex-direction: column;
+        @include display-flex($direction: column);
         max-width: 400px;
     }
 
     &-name {
-        @include transit('text-shadow');
         font-size: calc-rem(24px);
         font-weight: $fBold;
         margin-bottom: calc-rem(20px);
-        max-width: 80%;
-        z-index: 1;
     }
 
     &-description {

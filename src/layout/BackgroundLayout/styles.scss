@@ -13,9 +13,7 @@
     right: 0;
     bottom: 0;
     z-index: $z-index-70;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-flex($align: center, $justify: center);
     width: 100vw;
     height: 100vh;
     background-color: rgba(black, .5);

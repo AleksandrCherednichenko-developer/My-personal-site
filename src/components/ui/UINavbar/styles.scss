@@ -1,14 +1,13 @@
 .navbar {
     &__inner {
-        display: flex;
-        gap: calc-rem(20px);
+        @include display-flex($gap: 20px);
     }
 
     &__item {
         @include clear-link;
         @include transit('text-shadow, color');
         position: relative;
-        font-weight: $fRegular;
+        font-weight: $fLight;
         cursor: pointer;
 
         &:before {

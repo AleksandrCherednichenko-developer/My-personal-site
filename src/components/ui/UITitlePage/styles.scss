@@ -1,7 +1,5 @@
 .page-title{
-    display: flex;
-    align-items: center;
-    gap: calc-rem(30px);
+    @include display-flex($gap: 30px, $align: center);
     font-size: calc-rem(30px);
     font-weight: $fBold;
     cursor: pointer;
@@ -16,8 +14,8 @@
             @include transit('transform, box-shadow, background-color', 2s, 5s);
             animation: spin-divider 3s;
             transform: rotate(30deg);
-            background-color: $cHeliotrope;
-            box-shadow: 0 0 1px $cHeliotrope, 0 0 8px $cAquamarine;
+            background-color: $cTurquoiseBlue;
+            box-shadow: 0 0 1px $cAquamarine, 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
         }
     }
 }
@@ -25,17 +23,17 @@
 @keyframes spin-divider {
     0% {
         transform: rotate(330deg);
-        background-color: $cHeliotrope;
-        box-shadow: 0 0 8px $cHeliotrope, 0 0 8px $cAquamarine;
+        background-color: $cAmber;
+        box-shadow: 0 0 8px $cAquamarine;
     }
     50% {
         transform: rotate(0deg) scale(1.2);
-        background-color: $cPersianIndigo;
-        box-shadow: 0 0 8px $cHeliotrope, 0 0 8px $cAquamarine;
+        background-color: $cButtercup;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
     }
     100% {
         transform: rotate(30deg);
-        background-color: $cHeliotrope;
-        box-shadow: 0 0 8px $cHeliotrope, 0 0 8px $cAquamarine;
+        background-color: $cTurquoiseBlue;
+        box-shadow: 0 0 8px $cAquamarine, 0 0 8px $cAquamarine;
     }
 }

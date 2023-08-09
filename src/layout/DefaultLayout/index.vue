@@ -1,9 +1,11 @@
 <template>
-    <main class="main">
-        <router-view v-slot="{ Component }">
-            <component :is="Component" />
-        </router-view>
-    </main>
+    <transition name="fade-enter-transition" mode="out-in" appear>
+        <main class="main">
+            <router-view v-slot="{ Component }">
+                <component :is="Component" />
+            </router-view>
+        </main>
+    </transition>
 </template>
 
 <script>

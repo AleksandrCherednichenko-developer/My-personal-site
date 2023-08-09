@@ -1,7 +1,6 @@
 .card {
     position: relative;
-    display: flex;
-    gap: calc-rem(40px);
+    @include display-flex($gap: 40px);
     width: fit-content;
 
     @media #{$mXs}{
@@ -45,22 +44,16 @@
     }
 
     &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
+        @include display-flex($direction: column, $align: center, $gap: 40px);
+        height: fit-content;
         background-color: $cEbonyClay;
         border: 2px solid $cTuna;
         border-radius: calc-rem(22px);
         box-shadow: 2px 2px 10px 2px $cEbonyClay;
+        margin: auto;
 
         &-preview {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: calc-rem(20px);
-            height: 100%;
+            @include display-flex($direction: column, $gap: 20px);
             padding: calc-rem(20px);
 
             .image-wrapper {
@@ -81,10 +74,7 @@
             }
 
             .text-wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: calc-rem(20px);
+                @include display-flex($direction: column, $align: center, $gap: 20px);
 
                 .preview-name {
                     font-weight: $fBold;
@@ -102,17 +92,12 @@
                     border-radius: calc-rem(4px);
                     background-color: $cHeliotrope;
                 }
-
-                .preview-text {
-                }
             }
         }
 
         &-links {
             position: relative;
-            display: flex;
-            justify-content: center;
-            gap: calc-rem(40px);
+            @include display-flex($justify: center, $gap: 40px);
             width: 100%;
             background-color: $cEbonyClay;
             border-top: 2px solid $cTuna;
@@ -159,9 +144,7 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
-        gap: calc-rem(20px);
+        @include display-flex($direction: column, $gap: 20px);
         max-width: calc-rem(400px);
         width: auto;
         margin: auto;
@@ -173,10 +156,6 @@
         &-title {
             font-size: calc-rem(30px);
             font-weight: $fBold;
-        }
-
-        &-description {
-
         }
     }
 }

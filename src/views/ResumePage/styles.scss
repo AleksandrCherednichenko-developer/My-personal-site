@@ -4,16 +4,12 @@
     &-experience__block,
     &-education__block,
     &-skills__block {
-        display: flex;
-        flex-direction: column;
-        gap: calc-rem(30px);
+        @include display-flex($direction:column,$gap:30px);
         max-width: 700px;
         width: 100%;
 
         .title {
-            display: flex;
-            align-items: center;
-            gap: calc-rem(20px);
+            @include display-flex($align:center,$gap:20px);
             font-size: calc-rem(20px);
             font-weight: $fBold;
         }
