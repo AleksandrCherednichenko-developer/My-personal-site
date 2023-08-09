@@ -1,7 +1,5 @@
 .page-title{
-    display: flex;
-    align-items: center;
-    gap: calc-rem(30px);
+    @include display-flex($gap: 30px, $align: center);
     font-size: calc-rem(30px);
     font-weight: $fBold;
     cursor: pointer;

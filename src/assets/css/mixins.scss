@@ -14,6 +14,14 @@
     text-decoration: none;
 }
 
+@mixin display-flex($direction: row, $gap: 0px, $align: initial, $justify: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    gap: calc-rem($gap);
+}
+
 @mixin clear-button {
     background: none;
     border: none;

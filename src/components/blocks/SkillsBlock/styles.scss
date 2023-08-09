@@ -22,8 +22,7 @@
     }
 
     &-line {
-        display: flex;
-        align-items: center;
+        @include display-flex($align: center);
         max-width: calc-rem(500px);
         width: 100%;
         background-color: rgba($cFadingSunset, 0.5);
@@ -36,9 +35,7 @@
         }
 
         &-label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display-flex($align: center, $justify: center);
             width: calc-rem(35px);
             height: 100%;
             font-size: calc-rem(12px);

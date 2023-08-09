@@ -1,7 +1,5 @@
 .logo {
-    display: flex;
-    align-items: center;
-    gap: calc-rem(20px);
+    @include display-flex($gap: 20px, $align: center);
 
     @include hover() {
         .text-dividers{

@@ -1,6 +1,5 @@
 .aside__panel {
-    display: flex;
-    flex-direction: column;
+    @include display-flex($direction: column);
     height: 100%;
     background-color: $cCinder;
     margin-left: auto;

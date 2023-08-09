@@ -1,11 +1,10 @@
 .project__block {
     position: relative;
-    display: flex;
-    gap: calc-rem(20px);
-    padding: calc-rem(20px);
+    @include display-flex($gap: 20px);
     background-color: $cEbonyClay;
     border-radius: 12px;
     box-shadow: 5px 5px 10px -2px #471795;
+    padding: calc-rem(20px);
 
     @media #{$mXs}{
         flex-direction: column;
@@ -22,8 +21,7 @@
     }
 
     &-text {
-        display: flex;
-        flex-direction: column;
+        @include display-flex($direction: column);
         max-width: 400px;
     }
 

@@ -1,7 +1,6 @@
 .navbar {
     &__inner {
-        display: flex;
-        gap: calc-rem(20px);
+        @include display-flex($gap: 20px);
     }
 
     &__item {
