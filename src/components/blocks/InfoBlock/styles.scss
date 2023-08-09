@@ -8,7 +8,9 @@
     border-radius: calc-rem(12px);
     padding: calc-rem(30px);
     cursor: default;
-    box-shadow: 5px 5px 10px -2px $cPersianIndigo;
+    box-shadow: inset -3px -3px 40px rgba($cPersianIndigo, 0.2),
+                3px 3px 10px rgba($cPersianIndigo, 0.7);
+
 
     @media #{$mXs} {
         @include display-flex($direction: column, $gap: 20px);
@@ -38,10 +40,15 @@
             @include display-flex($gap: 10px, $align: center);
 
             .skills-item {
+                @include transit('transform');
                 @include size(20px);
 
                 @media #{$mXs} {
                     @include size(15px);
+                }
+
+                @include hover() {
+                    transform: scale(1.3);
                 }
             }
 

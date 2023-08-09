@@ -3,7 +3,7 @@
     height: $height;
 }
 
-@mixin transit($props, $duration: var(--dTransit), $delay: 0s) {
+@mixin transit($props, $duration: .3s, $delay: 0s) {
     transition-property: #{$props};
     transition-duration: $duration;
     transition-delay: $delay;

@@ -17,6 +17,7 @@
                 <UISvgIcon
                     v-for="(item, i) in skills"
                     :key="i"
+                    :title="item"
                     :name="item"
                     class="skills-item"
                 />
