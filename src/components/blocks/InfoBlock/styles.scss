@@ -8,9 +8,7 @@
     border-radius: calc-rem(12px);
     padding: calc-rem(30px);
     cursor: default;
-    box-shadow: inset -3px -3px 40px rgba($cPersianIndigo, 0.2),
-                3px 3px 10px rgba($cPersianIndigo, 0.7);
-
+    box-shadow: inset -3px -3px 40px rgba($cPersianIndigo, 0.2), 3px 3px 10px rgba($cPersianIndigo, 0.7);
 
     @media #{$mXs} {
         @include display-flex($direction: column, $gap: 20px);

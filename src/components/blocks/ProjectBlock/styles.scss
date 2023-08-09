@@ -3,7 +3,7 @@
     @include display-flex($gap: 20px);
     background-color: $cEbonyClay;
     border-radius: 12px;
-    box-shadow: 5px 5px 10px -2px #471795;
+    box-shadow: inset -3px -3px 40px rgba($cPersianIndigo, 0.2), 3px 3px 10px rgba($cPersianIndigo, 0.7);
     padding: calc-rem(20px);
 
     @media #{$mXs}{
