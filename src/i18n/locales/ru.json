@@ -3,6 +3,10 @@
         "ru": "Russian",
         "en": "English"
     },
+    "morning": "Доброе утро!",
+    "afternoon": "Добрый день!",
+    "evening": "Добрый вечер!",
+    "night": "Доброй ночи!",
     "navbar": {
         "about": "Обо мне",
         "resume": "Резюме",
@@ -32,7 +36,7 @@
         "location": "Санкт-Петербург - Таиланд",
         "position": "Frontend-developer",
         "period": "07.2022 - По н.в.",
-        "skills": "html,sass,git,js,vue"
+        "skills": "html,sass,git,js,vue,nuxt"
     },
     "work2": {
         "name": "AT-Work",
@@ -65,33 +69,39 @@
         "period": "09.2009 - 06.2013"
     },
     "project1": {
-        "name": "Мой личный сайт",
-        "description": "Мой сайт - портфолио. Проект написан на Vue 3 Composition api, в связке со сборщиком Vite. Использован: EsLint, i18n. Дизайн разрабатывал по примерам метов найденных в интернете.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/My-personal-site",
-        "image": "project-1"
+        "name": "Alerts app",
+        "description": "Тестовое задание, требовалось реализовать навигацию, работу с api.",
+        "link": "https://aleksandrcherednichenko-developer.github.io/alerts-app/#/",
+        "image": "alert-app"
     },
     "project2": {
-        "name": "Integration OpenAI API",
-        "description": "Интеграция публичного api OpenAI в проекте Vue. Этот проект задумывался для более доступного понимания и использования ии. Некоторые компоненты и функции, а так-же текста, используемые в проекте сгенерированны ии. На данный момент проект приостановлен.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/MyProject-OpenAI",
-        "image": "project-2"
+        "name": "Alerts app Nuxt 3",
+        "description": "Приложение alerts-app переписанно на nuxt 3. В дальнейшем будет переписанно на TypeScript.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/alerts-app-nuxt3",
+        "image": "alert-app-nuxt"
     },
     "project3": {
-        "name": "Create a letter of recommendation",
-        "description": "В этом проекте реализовани функционал создания рекомендательного письма. Проект был написан на vanila js. В процессе заполнения данных осуществляеться сохранение уже заполненных данных.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/letter_of_recomendation",
-        "image": "project-3"
+        "name": "Шаблон для личного сайта портфолио",
+        "description": "Сайт - портфолио. Проект написан на Vue 3 Composition api, в связке со сборщиком Vite. Использован: EsLint, i18n. Дизайн взят из примеров макетов, находящихся в свободном доступе.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/My-personal-site",
+        "image": "site-portfolio"
     },
     "project4": {
-        "name": "Create a new resume",
-        "description": "Проект по созданию нового резюме, для портала аналагичного HH. Написан с использованием препроцессора Sass, основной функционал написан на vanilla js.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/New_resume",
-        "image": "project-4"
+        "name": "Интеграция с api OpenAi",
+        "description": "Интеграция публичного api OpenAI в проекте Vue. Этот проект задумывался для более доступного понимания и использования ии. Некоторые компоненты и функции, а так-же текста, используемые в проекте сгенерированны ии. На данный момент проект приостановлен.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/MyProject-OpenAI",
+        "image": "openai-api"
     },
     "project5": {
-        "name": "Ad display page",
-        "description": "Страница для отображения вакансий на сайте, для поиска потенциальных работников. Реализован функционал запомнить выбранные фильтры для поиска. Дальнейшая интеграция осуществлялась с CMS Bitrix.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/Employment",
-        "image": "project-5"
+        "name": "Создание рекомендательного письма для работника",
+        "description": "В этом проекте реализовани функционал создания рекомендательного письма. Проект был написан на vanila js. В процессе заполнения данных осуществляеться сохранение уже заполненных данных.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/letter_of_recomendation",
+        "image": "letter-recommendation"
+    },
+    "project6": {
+        "name": "Создание нового резюме для поиска работы",
+        "description": "Проект по созданию нового резюме, для портала аналагичного HH. Написан с использованием препроцессора Sass, основной функционал написан на vanilla js.",
+        "link": "https://github.com/AleksandrCherednichenko-developer/New_resume",
+        "image": "new-resume"
     }
 }

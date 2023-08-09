@@ -5,7 +5,7 @@
 
             <transition name="fade-slide-top" mode="out-in" appear>
                 <div class="page-inner">
-                    <template v-for="index in 5" :key="index">
+                    <template v-for="index in 6" :key="index">
                         <ProjectBlock
                             :name="$t(`project${index}.name`)"
                             :description="$t(`project${index}.description`)"
