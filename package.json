@@ -1,5 +1,6 @@
 {
     "name": "my-personal-website",
+    "homepage": "https://AleksandrCherednichenko-developer.github.io/my-personal-site/",
     "version": "1.0.0",
     "private": true,
     "scripts": {
