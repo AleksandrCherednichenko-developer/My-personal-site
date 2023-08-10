@@ -7,6 +7,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
     base: '/My-personal-site/',
+
     plugins: [
         vue(),
         svgLoader({

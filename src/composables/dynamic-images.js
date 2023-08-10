@@ -1,5 +1,5 @@
 export default function dynamicImages (asset) {
-    const assets = import.meta.glob('/public/*/*', { eager: true });
+    const assets = import.meta.glob('/public/*/*/*', { eager: true });
 
     const getAssetUrl = () => {
         if (assets[asset]) {

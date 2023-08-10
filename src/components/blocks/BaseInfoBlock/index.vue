@@ -4,7 +4,7 @@
             <div class="card__info">
                 <div class="card__info-preview">
                     <div class="image-wrapper">
-                        <img class="preview-image" src="/images/photo/image-2.jpg" alt="image">
+                        <img class="preview-image" :src="dynamicImages(`/public/images/photo/photo.jpg`)" alt="image">
                     </div>
 
                     <div class="text-wrapper">
@@ -76,6 +76,7 @@ export default {
 <script setup>
 import { computed } from 'vue';
 import UISvgIcon from '@/components/ui/UISvgIcon/index.vue';
+import dynamicImages from '@/composables/dynamic-images';
 
 const timeOfDay = computed(() => {
     const now = new Date();
