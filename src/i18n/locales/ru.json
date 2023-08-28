@@ -69,16 +69,16 @@
         "period": "09.2009 - 06.2013"
     },
     "project1": {
+        "name": "Блог с постами Nuxt 3",
+        "description": "Приложение личного блога с постами. Реализовано создание, удаление, редактирование постов. Проект написан с использованием: Nuxt 3, Vite, Pinia",
+        "link": "https://github.com/AleksandrCherednichenko-developer/post-blog-nuxg3",
+        "image": "posts-blog-nuxt"
+    },
+    "project2": {
         "name": "Alerts app",
         "description": "Тестовое задание, требовалось реализовать навигацию, работу с api.",
         "link": "https://aleksandrcherednichenko-developer.github.io/alerts-app/#/",
         "image": "alert-app"
-    },
-    "project2": {
-        "name": "Alerts app Nuxt 3",
-        "description": "Приложение alerts-app переписанно на nuxt 3. В дальнейшем будет переписанно на TypeScript.",
-        "link": "https://github.com/AleksandrCherednichenko-developer/alerts-app-nuxt3",
-        "image": "alert-app-nuxt"
     },
     "project3": {
         "name": "Шаблон для личного сайта портфолио",
