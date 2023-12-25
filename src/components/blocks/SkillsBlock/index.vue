@@ -23,9 +23,9 @@ export default {
 const info = [
     { name: 'HTML', percent: '90%' },
     { name: 'SCSS', percent: '90%' },
-    { name: 'JavaScript', percent: '75%' },
+    { name: 'JavaScript', percent: '80%' },
     { name: 'Git', percent: '70%' },
-    { name: 'Vue 3', percent: '75%' },
+    { name: 'Vue 3', percent: '80%' },
     { name: 'Nuxt 3', percent: '50%' },
     { name: 'Vitest', percent: '50%' },
     { name: 'Vite / Gulp / Webpack', percent: '70%' },
