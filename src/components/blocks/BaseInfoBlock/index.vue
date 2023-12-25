@@ -21,35 +21,19 @@
                 </div>
                 <div class="card__info-links">
                     <a
-                        href="https://github.com/AleksandrCherednichenko-developer"
-                        class="link-item"
-                        title="github"
+                        v-for="item in socialLinks"
+                        :key="item.title"
+                        :href="item.link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <UISvgIcon class="link-item-icon" name="github" />
-                    </a>
-                    <a
-                        href="https://t.me/+79090997778"
-                        class="link-item"
-                        title="telegram"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <UISvgIcon class="link-item-icon" name="telegram" />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/aleksandr-cherednichenko-273374250/"
-                        class="link-item"
-                        title="linkedin"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <UISvgIcon class="link-item-icon" name="linkedin" />
+
+                        <UISvgIcon class="link-item-icon" :name="item.icon" />
                     </a>
                 </div>
             </div>
         </transition>
+
         <transition name="fade-slide-left" mode="out-in" appear>
             <div class="card__text">
                 <transition name="fade-enter-transition" mode="out-in" appear>
@@ -92,6 +76,24 @@ const timeOfDay = computed(() => {
         return 'night';
     }
 });
+
+const socialLinks = [
+    {
+        title: 'github',
+        link: 'https://github.com/AleksandrCherednichenko-developer',
+        icon: 'github-icon',
+    },
+    {
+        title: 'telegram',
+        link: 'https://t.me/+79090997778',
+        icon: 'telegram-icon',
+    },
+    {
+        title: 'github',
+        link: 'https://www.linkedin.com/in/aleksandr-cherednichenko-273374250/',
+        icon: 'linkedin-icon',
+    },
+];
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />

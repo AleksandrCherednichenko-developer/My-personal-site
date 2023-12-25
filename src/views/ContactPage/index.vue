@@ -17,15 +17,8 @@
                         </ul>
                     </div>
                 </transition>
-                <transition name="fade-slide-right" mode="out-in" appear>
-                    <div class="contact__links">
-                        <ContactLink
-                            v-for="(item, i) in contactLinks"
-                            :key="i"
-                            v-bind="item"
-                        />
-                        <SocialLinksBlock />
-                    </div>
+                <transition name="fade-scale" mode="out-in" appear>
+                    <SocialLinksBlock />
                 </transition>
             </div>
         </div>
@@ -39,23 +32,8 @@ export default {
 </script>
 
 <script setup>
-import { ref } from 'vue';
 import UITitlePage from '@/components/ui/UITitlePage/index.vue';
-import ContactLink from '@/components/links/ContactLink/index.vue';
 import SocialLinksBlock from '@/components/links/SocialLinksBlock/index.vue';
-
-const contactLinks = ref({
-    phone: {
-        title: 'call',
-        linkText: '+79090997778',
-        link: 'tel: +79090997778',
-    },
-    mail: {
-        title: 'write',
-        linkText: 'acherednichenko174@gmail.com',
-        link: 'mailto:acherednichenko174@gmail.com',
-    },
-});
 </script>
 
 <style src="./styles.scss" lang="scss" scoped />
