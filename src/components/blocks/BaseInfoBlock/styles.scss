@@ -54,7 +54,7 @@
 
         &-preview {
             @include display-flex($direction: column, $gap: 20px);
-            padding: calc-rem(20px);
+            padding: calc-rem(30px);
 
             .image-wrapper {
                 @include size(200px);
@@ -64,7 +64,7 @@
                 margin: 0 auto;
 
                 @media #{$mXs} {
-                    @include size(150px);
+                    @include size(180px);
                 }
 
                 .preview-image {

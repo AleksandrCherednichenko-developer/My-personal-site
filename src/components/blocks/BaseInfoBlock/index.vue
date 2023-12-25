@@ -4,7 +4,7 @@
             <div class="card__info">
                 <div class="card__info-preview">
                     <div class="image-wrapper">
-                        <img class="preview-image" :src="dynamicImages(`/public/images/photo/photo.jpg`)" alt="image">
+                        <img class="preview-image" :src="dynamicImages(`/public/images/photo/photo1.jpg`)" alt="image">
                     </div>
 
                     <div class="text-wrapper">
