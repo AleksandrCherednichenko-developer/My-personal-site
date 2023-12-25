@@ -36,10 +36,10 @@ const navbarMenu = [
         name: 'resume',
         path: { name: ROUTE_NAMES.RESUME_PAGE.routeName },
     },
-    {
-        name: 'project',
-        path: { name: ROUTE_NAMES.PROJECT_PAGE.routeName },
-    },
+    // {
+    //     name: 'project',
+    //     path: { name: ROUTE_NAMES.PROJECT_PAGE.routeName },
+    // },
     {
         name: 'contact',
         path: { name: ROUTE_NAMES.CONTACT_PAGE.routeName },
