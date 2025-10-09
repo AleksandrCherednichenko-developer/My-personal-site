@@ -1,34 +1,41 @@
 {
-    "name": "my-personal-website",
-    "homepage": "https://AleksandrCherednichenko-developer.github.io/My-personal-site/",
-    "version": "1.0.0",
-    "private": false,
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
-    },
-    "dependencies": {
-        "@intlify/unplugin-vue-i18n": "^0.8.2",
-        "core-js": "^3.25.2",
-        "lodash.throttle": "^4.1.1",
-        "mitt": "^3.0.0",
-        "vue": "^3.3.2",
-        "vue-i18n": "^9.2.2",
-        "vue-router": "^4.2.0"
-    },
-    "devDependencies": {
-        "@vitejs/plugin-vue": "^4.2.3",
-        "@vue/eslint-config-standard": "^8.0.1",
-        "eslint": "^8.39.0",
-        "eslint-plugin-standard": "^4.1.0",
-        "eslint-plugin-vue": "^9.11.0",
-        "gh-pages": "^5.0.0",
-        "sass": "^1.55.0",
-        "vite": "^4.3.5",
-        "vite-svg-loader": "^3.6.0"
-    }
+	"name": "my-personal-website",
+	"homepage": "https://AleksandrCherednichenko-developer.github.io/My-personal-site/",
+	"version": "1.0.0",
+	"private": false,
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+		"lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+		"type-check": "vue-tsc --noEmit",
+		"test": "vitest",
+		"test:ui": "vitest --ui",
+		"predeploy": "npm run lint:check && npm run build",
+		"deploy": "gh-pages -d dist",
+		"deploy:manual": "npm run predeploy && npm run deploy",
+		"clean": "rm -rf dist node_modules/.vite",
+		"fresh": "npm run clean && npm install && npm run build"
+	},
+	"dependencies": {
+		"@intlify/unplugin-vue-i18n": "^0.8.2",
+		"core-js": "^3.25.2",
+		"lodash.throttle": "^4.1.1",
+		"mitt": "^3.0.0",
+		"vue": "^3.3.2",
+		"vue-i18n": "^9.2.2",
+		"vue-router": "^4.2.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.2.3",
+		"@vue/eslint-config-standard": "^8.0.1",
+		"eslint": "^8.39.0",
+		"eslint-plugin-standard": "^4.1.0",
+		"eslint-plugin-vue": "^9.11.0",
+		"gh-pages": "^5.0.0",
+		"sass": "^1.55.0",
+		"vite": "^4.3.5",
+		"vite-svg-loader": "^3.6.0"
+	}
 }
