@@ -47,19 +47,13 @@ export default defineConfig({
 		outDir: 'dist',
 		assetsDir: 'assets',
 		sourcemap: false,
-		minify: 'terser',
+		minify: 'esbuild',
 		rollupOptions: {
 			output: {
 				manualChunks: {
 					vendor: ['vue', 'vue-router'],
-					i18n: ['vue-i18n', '@intlify/unplugin-vue-i18n'],
+					i18n: ['vue-i18n'],
 				},
-			},
-		},
-		terserOptions: {
-			compress: {
-				drop_console: true,
-				drop_debugger: true,
 			},
 		},
 	},
