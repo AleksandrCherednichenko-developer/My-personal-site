@@ -6,7 +6,7 @@ import { resolve, dirname } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-	base: '/My-personal-site/',
+	base: '/',
 
 	plugins: [
 		vue(),

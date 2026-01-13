@@ -29,3 +29,33 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Deployment
+
+### Deploy to Vercel
+
+This project is configured for deployment on Vercel.
+
+#### Option 1: Using Vercel CLI
+
+1. Install Vercel CLI globally:
+```sh
+npm i -g vercel
+```
+
+2. Deploy from project root:
+```sh
+vercel
+```
+
+3. Follow the prompts to complete the deployment.
+
+#### Option 2: Using Vercel Dashboard
+
+1. Go to [vercel.com](https://vercel.com) and sign in
+2. Click "Add New Project"
+3. Import your Git repository
+4. Vercel will automatically detect Vue.js and configure the build settings
+5. Click "Deploy"
+
+The project will be automatically deployed on every push to the main branch.
